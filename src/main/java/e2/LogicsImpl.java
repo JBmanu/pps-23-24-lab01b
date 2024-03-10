@@ -29,8 +29,8 @@ public class LogicsImpl implements Logics {
     }
 
     @Override
-    public int minesCount(final Position position) {
-        return 0;
+    public int minesCountFrom(final Position position) {
+        return this.grid.minesCountFrom(position);
     }
 
     @Override

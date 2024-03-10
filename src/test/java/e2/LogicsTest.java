@@ -5,11 +5,9 @@ import e1.piece.position.SimplePosition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class LogicsTest {
-
     public static final int SIZE = 5;
     public static final Position MINE_POSITION = new SimplePosition(0, 0);
     public static final Position FREE_POSITION = new SimplePosition(0, 1);
@@ -32,6 +30,11 @@ public class LogicsTest {
     public void loseGame() {
         final boolean hasLose = this.logics.hasLose(MINE_POSITION);
         assertTrue(hasLose);
+    }
+
+    @Test
+    public void minesCountFromPosition() {
+        assertEquals(1, this.logics.minesCountFrom(FREE_POSITION));
     }
 
 }

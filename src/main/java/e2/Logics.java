@@ -10,7 +10,7 @@ public interface Logics {
 
     boolean isMine(final Position position);
 
-    int minesCount(final Position position);
+    int minesCountFrom(final Position position);
 
     void updateMinesCounter(final Position position);
 }
