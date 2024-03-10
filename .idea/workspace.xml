@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+    <option name="SCOPE_TYPE" value="3" />
+    <option name="CUSTOM_SCOPE_NAME" value="All Places" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="refactor: improv dependencies">
+      <change beforePath="$PROJECT_DIR$/src/main/java/e1/LogicsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e1/LogicsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e1/LogicTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2dDhpiVjmvgKcHIAG6HhUPxJclU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.GridChessTest.canCreateGrid.executor": "Run",
+    "Gradle.GridChessTest.estUpdatePiecePositionOfIdInPositionOutGrid.executor": "Run",
+    "Gradle.GridChessTest.executor": "Run",
+    "Gradle.GridChessTest.testAddNull.executor": "Run",
+    "Gradle.GridChessTest.testAddPiece.executor": "Run",
+    "Gradle.GridChessTest.testAddPieceInEmptyPosition.executor": "Run",
+    "Gradle.GridChessTest.testCheckBoundsWithNullPosition.executor": "Run",
+    "Gradle.GridChessTest.testCreateGridMinSize.executor": "Run",
+    "Gradle.GridChessTest.testGenerateEmptyPosition.executor": "Run",
+    "Gradle.GridChessTest.testGenerateMultipleEmptyPosition.executor": "Run",
+    "Gradle.GridChessTest.testGetPiece.executor": "Run",
+    "Gradle.GridChessTest.testPiecePositionFromId.executor": "Run",
+    "Gradle.GridChessTest.testPositionOnGrid.executor": "Run",
+    "Gradle.GridChessTest.testPositionOverGrid.executor": "Run",
+    "Gradle.GridChessTest.testPositionOverGridForAllGridSide.executor": "Run",
+    "Gradle.GridChessTest.testReadPositionAfterAddPiece.executor": "Run",
+    "Gradle.GridChessTest.testReadSize.executor": "Run",
+    "Gradle.GridChessTest.testUpdatePiecePositionOfId.executor": "Run",
+    "Gradle.KnightMovementTest.canCreateKnightMovement.executor": "Run",
+    "Gradle.KnightMovementTest.executor": "Run",
+    "Gradle.KnightMovementTest.testGridPositionsOfThreeStepFromCenter.executor": "Run",
+    "Gradle.KnightMovementTest.testGridPositionsOfTwoStepFromCenter.executor": "Run",
+    "Gradle.KnightMovementTest.testMovementLDownLeft.executor": "Run",
+    "Gradle.KnightMovementTest.testMovementLDownRight.executor": "Run",
+    "Gradle.KnightMovementTest.testMovementLLeftDown.executor": "Run",
+    "Gradle.KnightMovementTest.testMovementLLeftUp.executor": "Run",
+    "Gradle.KnightMovementTest.testMovementLRightDown.executor": "Run",
+    "Gradle.KnightMovementTest.testMovementLRightUp.executor": "Run",
+    "Gradle.KnightMovementTest.testMovementLUpLeft.executor": "Run",
+    "Gradle.KnightMovementTest.testMovementLUpRight.executor": "Run",
+    "Gradle.KnightMovementTest.testOneStepAllPerimeterFromStartPosition.executor": "Run",
+    "Gradle.LogicTest.test.executor": "Run",
+    "Gradle.LogicTest.testArePresentKnightAndPawn.executor": "Run",
+    "Gradle.LogicTest.testKnightOverlayPawn.executor": "Run",
+    "Gradle.LogicsTest.executor": "Run",
+    "Gradle.LogicsTest.testArePresentKnightAndPawn.executor": "Run",
+    "Gradle.LogicsTest.testBoundWhenSetKnightUpLeftCornerAndMoveDirectionLeft.executor": "Run",
+    "Gradle.LogicsTest.testCanKnightAndPawnSetPosition.executor": "Debug",
+    "Gradle.LogicsTest.testCreateKnightAndPawnInOverlayPosition.executor": "Run",
+    "Gradle.LogicsTest.testCreateKnightAndPawnOutSideGrid.executor": "Run",
+    "Gradle.LogicsTest.testCreateKnightAndPawnWithNullPosition.executor": "Run",
+    "Gradle.LogicsTest.testKnightHit.executor": "Run",
+    "Gradle.LogicsTest.testKnightNotHit.executor": "Run",
+    "Gradle.LogicsTest.testKnightOverlayPawn.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testBoundWhenSetKnightBottomRightCornerAndMoveDirectionBottom.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testBoundWhenSetKnightBottomRightCornerAndMoveDirectionRight.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testBoundWhenSetKnightUpLeftCornerAndMoveDirectionLeft.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testBoundWhenSetKnightUpLeftCornerAndMoveDirectionUp.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testCanSetPositionKnightAndPawn.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testCreateGridWithMinSize.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testCreateGridWithZeroSize.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testCreateKnightAndPawnOutSideGrid.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testCreateKnightAndPawnWithNullPosition.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testKnightHit.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testMoveKnightDirectionUp.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testNotHit.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testOverlayKnightAndPawnPosition.executor": "Run",
+    "Gradle.LogicsWithSetManualPositionTest.testSetPositionKnightAndPawn.executor": "Run",
+    "Gradle.LogicsWithSetRandomPositionTest.executor": "Run",
+    "Gradle.NothingMovementTest.executor": "Run",
+    "Gradle.NothingMovementTest.testIsPossibleMove.executor": "Run",
+    "Gradle.NothingMovementTest.testMovementWithNullValues.executor": "Run",
+    "Gradle.PawnMovementTest.canCreateTest.executor": "Run",
+    "Gradle.PawnMovementTest.executor": "Run",
+    "Gradle.PawnMovementTest.testIsPossibleMoveWithNullValues.executor": "Run",
+    "Gradle.PawnMovementTest.testMovementDirectionDown.executor": "Run",
+    "Gradle.PawnMovementTest.testMovementDirectionLeft.executor": "Run",
+    "Gradle.PawnMovementTest.testMovementDirectionRight.executor": "Run",
+    "Gradle.PawnMovementTest.testMovementMoreOneStepDirectionUp.executor": "Run",
+    "Gradle.PawnMovementTest.testMovementsDirectionUp.executor": "Run",
+    "Gradle.PawnTest.canCreatePawn.executor": "Run",
+    "Gradle.PawnTest.executor": "Run",
+    "Gradle.PawnTest.testCreateAndReadPosition.executor": "Run",
+    "Gradle.PawnTest.testCreateWithNullPosition.executor": "Run",
+    "Gradle.PawnTest.testCreateWithPositionAndReadPosition.executor": "Run",
+    "Gradle.PawnTest.testEqualsOtherPosition.executor": "Run",
+    "Gradle.PawnTest.testNotEqualsOtherPosition.executor": "Run",
+    "Gradle.PawnTest.testReadPosition.executor": "Run",
+    "Gradle.PawnTest.testSetPositionAndRead.executor": "Run",
+    "Gradle.PawnTest.testSetXAndRead.executor": "Run",
+    "Gradle.PawnTest.testSetXAndYAndRead.executor": "Run",
+    "Gradle.PawnTest.testSetXAndYInDifferentMethodAndRead.executor": "Run",
+    "Gradle.PieceTest.canCreatePawn.executor": "Run",
+    "Gradle.PieceTest.canCreatePiece.executor": "Run",
+    "Gradle.PieceTest.executor": "Run",
+    "Gradle.PieceTest.testCreateKnightPiece.executor": "Run",
+    "Gradle.PieceTest.testCreatePieceWithNullParameters.executor": "Run",
+    "Gradle.PieceTest.testEqualId.executor": "Run",
+    "Gradle.PieceTest.testEqualsPosition.executor": "Run",
+    "Gradle.PieceTest.testReadComponent.executor": "Run",
+    "Gradle.PieceTest.testReadId.executor": "Run",
+    "Gradle.PieceTest.testReadMovementLogic.executor": "Run",
+    "Gradle.PieceTest.testReadPosition.executor": "Run",
+    "Gradle.PieceTest.testReadPositionAfterCreation.executor": "Run",
+    "Gradle.PieceTest.testSetNewMovementLogic.executor": "Run",
+    "Gradle.PieceTest.testSetNewPosition.executor": "Run",
+    "Gradle.PieceTest.testSetNullPosition.executor": "Run",
+    "Gradle.PositionTest.executor": "Run",
+    "Gradle.PositionTest.testCreateWithIntegerValue.executor": "Run",
+    "Gradle.PositionTest.testCreateWithPairPosition.executor": "Run",
+    "Gradle.PositionTest.testCreateWithPosition.executor": "Run",
+    "Gradle.PositionTest.testEqualsOtherPosition.executor": "Run",
+    "Gradle.PositionTest.testEqualsTwoPosition.executor": "Run",
+    "Gradle.PositionTest.testNotEqualsOtherPosition.executor": "Run",
+    "Gradle.PositionTest.testSetNewPositionAndChangeNewPosition.executor": "Run",
+    "Gradle.PositionTest.testSetPositionAndRead.executor": "Run",
+    "Gradle.PositionTest.testTwoPositionAreNotEquals.executor": "Run",
+    "Gradle.StaticFactoryGridChessTest.canCreateStaticFactoryGridChess.executor": "Run",
+    "Gradle.StaticFactoryGridChessTest.testCanCreateGridWithKnightAndIdlePawn.executor": "Run",
+    "Gradle.StaticFactoryGridChessTest.testCanCreateGridWithKnightAndIdlePawnWithPositions.executor": "Run",
+    "Gradle.StaticFactoryPieceTest.canCreateFixedPiece.executor": "Run",
+    "Gradle.StaticFactoryPieceTest.canCreateKnight.executor": "Run",
+    "Gradle.StaticFactoryPieceTest.executor": "Run",
+    "Gradle.StaticFactoryPieceTest.testCreateKnightInGridInEmptyPosition.executor": "Run",
+    "Gradle.StaticFactoryPieceTest.testFunctionsWithNullPosition.executor": "Run",
+    "Gradle.StaticFactoryPieceTest.testNullPosition.executor": "Run",
+    "Gradle.Tests in 'e1'.executor": "Run",
+    "Gradle.e1.piece.movement.KnightMovementTest and 2 more.executor": "Run",
+    "Gradle.e1.piece.movement.PawnMovementTest and 2 more.executor": "Run",
+    "Gradle.pps-23-24-lab01b [:Main.main()].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/manuelbuizo/Desktop/uni/PPS/pps-23-24-lab01b/src/main/java/e1/grid",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "scala_project_settings_configurable.last_selected_tab_index": "0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.splitter.proportion": "0.19983347",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="e1.grid" />
+      <recent name="e1.piece.movement" />
+      <recent name="e1.piece" />
+      <recent name="e1.model" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="e1.piece.movement.MovementTest" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="e1.piece.movement" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.PieceTest.testCreatePieceWithNullParameters">
+    <configuration name="LogicsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e1.LogicsTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PieceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e1.piece.PieceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PieceTest.testCreatePieceWithNullParameters" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e1.piece.PieceTest.testCreatePieceWithNullParameters&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PieceTest.testEqualsPosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e1.piece.PieceTest.testEqualsPosition&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PieceTest.testReadMovementLogic" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e1.piece.PieceTest.testReadMovementLogic&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.PieceTest.testCreatePieceWithNullParameters" />
+        <item itemvalue="Gradle.PieceTest.testEqualsPosition" />
+        <item itemvalue="Gradle.PieceTest.testReadMovementLogic" />
+        <item itemvalue="Gradle.PieceTest" />
+        <item itemvalue="Gradle.LogicsTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ScalaProjectSettings">
+    <option name="intInjectionMapping">
+      <map>
+        <entry key="css" value="CSS" />
+        <entry key="html" value="HTML" />
+        <entry key="java" value="JAVA" />
+        <entry key="js" value="JavaScript" />
+        <entry key="json" value="JSON" />
+        <entry key="json5" value="JSON5" />
+        <entry key="less" value="LESS" />
+        <entry key="md" value="Markdown" />
+        <entry key="protobuf" value="protobuf" />
+        <entry key="scala" value="Scala" />
+        <entry key="sql" value="SQL" />
+        <entry key="sqlu" value="SQL" />
+        <entry key="svg" value="SVG" />
+        <entry key="xhtml" value="XHTML" />
+        <entry key="xml" value="XML" />
+        <entry key="xpath" value="XPath" />
+        <entry key="yaml" value="yaml" />
+      </map>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="" />
+      <created>1709548741850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709548741850</updated>
+      <workItem from="1709548743730" duration="10965000" />
+      <workItem from="1709634869857" duration="4203000" />
+      <workItem from="1709648005804" duration="49865000" />
+      <workItem from="1709905651349" duration="2429000" />
+      <workItem from="1709908362784" duration="13293000" />
+    </task>
+    <task id="LOCAL-00117" summary="refactor: PawnMovement, SimpleGridChess">
+      <option name="closed" value="true" />
+      <created>1709818708324</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1709818708324</updated>
+    </task>
+    <task id="LOCAL-00118" summary="refactor: PositionTest">
+      <option name="closed" value="true" />
+      <created>1709819265247</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1709819265247</updated>
+    </task>
+    <task id="LOCAL-00119" summary="feat: green testSetPositionAndRead">
+      <option name="closed" value="true" />
+      <created>1709819659589</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1709819659589</updated>
+    </task>
+    <task id="LOCAL-00120" summary="feat: green testSetNewPositionAndChangeNewPosition">
+      <option name="closed" value="true" />
+      <created>1709819817153</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1709819817153</updated>
+    </task>
+    <task id="LOCAL-00121" summary="feat: green canCreateKnight">
+      <option name="closed" value="true" />
+      <created>1709820323567</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1709820323567</updated>
+    </task>
+    <task id="LOCAL-00122" summary="feat: green canCreateFixedPiece">
+      <option name="closed" value="true" />
+      <created>1709820371716</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1709820371716</updated>
+    </task>
+    <task id="LOCAL-00123" summary="feat: green testFunctionsWithNullPosition">
+      <option name="closed" value="true" />
+      <created>1709821297634</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1709821297634</updated>
+    </task>
+    <task id="LOCAL-00124" summary="feat: green testAddPiece">
+      <option name="closed" value="true" />
+      <created>1709822970021</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1709822970021</updated>
+    </task>
+    <task id="LOCAL-00125" summary="feat: green testAddPiece">
+      <option name="closed" value="true" />
+      <created>1709823071470</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1709823071470</updated>
+    </task>
+    <task id="LOCAL-00126" summary="feat: green testReadPositionAfterAddPiece">
+      <option name="closed" value="true" />
+      <created>1709823585554</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1709823585554</updated>
+    </task>
+    <task id="LOCAL-00127" summary="feat: green testAddNull">
+      <option name="closed" value="true" />
+      <created>1709824382215</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1709824382215</updated>
+    </task>
+    <task id="LOCAL-00128" summary="feat: green testGenerateEmptyPosition">
+      <option name="closed" value="true" />
+      <created>1709824847233</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1709824847233</updated>
+    </task>
+    <task id="LOCAL-00129" summary="feat: green testGenerateMultipleEmptyPosition">
+      <option name="closed" value="true" />
+      <created>1709825166195</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1709825166195</updated>
+    </task>
+    <task id="LOCAL-00130" summary="feat: improv Logics">
+      <option name="closed" value="true" />
+      <created>1709825660939</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1709825660939</updated>
+    </task>
+    <task id="LOCAL-00131" summary="feat: improv Logics">
+      <option name="closed" value="true" />
+      <created>1709825697405</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1709825697405</updated>
+    </task>
+    <task id="LOCAL-00132" summary="feat: green testAddPieceInEmptyPosition">
+      <option name="closed" value="true" />
+      <created>1709828712658</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1709828712658</updated>
+    </task>
+    <task id="LOCAL-00133" summary="refactor: testAddPieceInEmptyPosition">
+      <option name="closed" value="true" />
+      <created>1709830071746</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1709830071746</updated>
+    </task>
+    <task id="LOCAL-00134" summary="feat: add IdPiece enum">
+      <option name="closed" value="true" />
+      <created>1709830601104</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1709830601104</updated>
+    </task>
+    <task id="LOCAL-00135" summary="feat: add IdPiece enum">
+      <option name="closed" value="true" />
+      <created>1709830853819</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1709830853820</updated>
+    </task>
+    <task id="LOCAL-00136" summary="feat: add IdPiece enum">
+      <option name="closed" value="true" />
+      <created>1709830970622</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1709830970622</updated>
+    </task>
+    <task id="LOCAL-00137" summary="feat: green testFindFirstPiece">
+      <option name="closed" value="true" />
+      <created>1709831408742</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1709831408742</updated>
+    </task>
+    <task id="LOCAL-00138" summary="feat: green testNotFindFirstPiece">
+      <option name="closed" value="true" />
+      <created>1709831448507</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1709831448507</updated>
+    </task>
+    <task id="LOCAL-00139" summary="refactor: LogicsImpl">
+      <option name="closed" value="true" />
+      <created>1709831706344</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1709831706344</updated>
+    </task>
+    <task id="LOCAL-00140" summary="refactor: improv StaticFactoryPiece, finish es 1">
+      <option name="closed" value="true" />
+      <created>1709831909647</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1709831909647</updated>
+    </task>
+    <task id="LOCAL-00141" summary="refactor: clean up space">
+      <option name="closed" value="true" />
+      <created>1709906795272</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1709906795272</updated>
+    </task>
+    <task id="LOCAL-00142" summary="refactor: clean up space">
+      <option name="closed" value="true" />
+      <created>1709907350632</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1709907350632</updated>
+    </task>
+    <task id="LOCAL-00143" summary="refactor: position test+impl">
+      <option name="closed" value="true" />
+      <created>1709907365762</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1709907365762</updated>
+    </task>
+    <task id="LOCAL-00144" summary="refactor: MovementLogics">
+      <option name="closed" value="true" />
+      <created>1709907901536</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1709907901536</updated>
+    </task>
+    <task id="LOCAL-00145" summary="refactor: clean up Piece">
+      <option name="closed" value="true" />
+      <created>1709908985312</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1709908985312</updated>
+    </task>
+    <task id="LOCAL-00146" summary="feat: green testEqualId">
+      <option name="closed" value="true" />
+      <created>1709909339152</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1709909339152</updated>
+    </task>
+    <task id="LOCAL-00147" summary="refactor: piece">
+      <option name="closed" value="true" />
+      <created>1709909524695</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1709909524695</updated>
+    </task>
+    <task id="LOCAL-00148" summary="refactor: LogicsImpl">
+      <option name="closed" value="true" />
+      <created>1709911970943</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1709911970943</updated>
+    </task>
+    <task id="LOCAL-00149" summary="feat: green testCreateKnightInGridInEmptyPosition">
+      <option name="closed" value="true" />
+      <created>1709912301012</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1709912301012</updated>
+    </task>
+    <task id="LOCAL-00150" summary="feat: green testCreateIdlePawnInGridInEmptyPosition">
+      <option name="closed" value="true" />
+      <created>1709912312742</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1709912312742</updated>
+    </task>
+    <task id="LOCAL-00151" summary="refactor: LogicsImpl with StaticFactoryPiece">
+      <option name="closed" value="true" />
+      <created>1709912472309</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1709912472309</updated>
+    </task>
+    <task id="LOCAL-00152" summary="fix: error in constructor LogicsImpl">
+      <option name="closed" value="true" />
+      <created>1709912702705</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1709912702706</updated>
+    </task>
+    <task id="LOCAL-00153" summary="feat: green canCreateStaticFactoryGridChess">
+      <option name="closed" value="true" />
+      <created>1709913050367</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1709913050367</updated>
+    </task>
+    <task id="LOCAL-00154" summary="feat: green testCanCreateGridWithKnightAndIdlePawn">
+      <option name="closed" value="true" />
+      <created>1709913123009</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1709913123009</updated>
+    </task>
+    <task id="LOCAL-00155" summary="feat: green testCanCreateGridWithKnightAndIdlePawnWithPositions">
+      <option name="closed" value="true" />
+      <created>1709913257330</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1709913257330</updated>
+    </task>
+    <task id="LOCAL-00156" summary="refactor: LogicsImpl">
+      <option name="closed" value="true" />
+      <created>1709914377785</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1709914377785</updated>
+    </task>
+    <task id="LOCAL-00157" summary="feat: add updatePositionOfPiece">
+      <option name="closed" value="true" />
+      <created>1709914612151</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1709914612151</updated>
+    </task>
+    <task id="LOCAL-00158" summary="refactor: LogicsImpl">
+      <option name="closed" value="true" />
+      <created>1709914713108</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1709914713108</updated>
+    </task>
+    <task id="LOCAL-00159" summary="feat: green &#10;testUpdatePiecePositionOfId">
+      <option name="closed" value="true" />
+      <created>1709915087438</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1709915087438</updated>
+    </task>
+    <task id="LOCAL-00160" summary="feat: green &#10;estUpdatePiecePositionOfIdInPositionOutGrid">
+      <option name="closed" value="true" />
+      <created>1709915172849</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1709915172849</updated>
+    </task>
+    <task id="LOCAL-00161" summary="refactor: LogicsImpl">
+      <option name="closed" value="true" />
+      <created>1709915384855</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1709915384855</updated>
+    </task>
+    <task id="LOCAL-00162" summary="feat: green testPiecePositionFromId">
+      <option name="closed" value="true" />
+      <created>1709915960803</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1709915960803</updated>
+    </task>
+    <task id="LOCAL-00163" summary="refactor: LogicsImpl">
+      <option name="closed" value="true" />
+      <created>1709916757030</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1709916757030</updated>
+    </task>
+    <task id="LOCAL-00164" summary="refactor: movement">
+      <option name="closed" value="true" />
+      <created>1709917215084</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1709917215084</updated>
+    </task>
+    <task id="LOCAL-00165" summary="refactor: improv dependencies">
+      <option name="closed" value="true" />
+      <created>1710088404253</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1710088404253</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor: testAddPieceInEmptyPosition" />
+    <MESSAGE value="feat: add IdPiece enum" />
+    <MESSAGE value="feat: green testFindFirstPiece" />
+    <MESSAGE value="feat: green testNotFindFirstPiece" />
+    <MESSAGE value="refactor: improv StaticFactoryPiece, finish es 1" />
+    <MESSAGE value="refactor: clean up space" />
+    <MESSAGE value="refactor: position test+impl" />
+    <MESSAGE value="refactor: MovementLogics" />
+    <MESSAGE value="refactor: clean up Piece" />
+    <MESSAGE value="feat: green testEqualId" />
+    <MESSAGE value="refactor: piece" />
+    <MESSAGE value="feat: green testCreateKnightInGridInEmptyPosition" />
+    <MESSAGE value="feat: green testCreateIdlePawnInGridInEmptyPosition" />
+    <MESSAGE value="refactor: LogicsImpl with StaticFactoryPiece" />
+    <MESSAGE value="fix: error in constructor LogicsImpl" />
+    <MESSAGE value="feat: green canCreateStaticFactoryGridChess" />
+    <MESSAGE value="feat: green testCanCreateGridWithKnightAndIdlePawn" />
+    <MESSAGE value="feat: green testCanCreateGridWithKnightAndIdlePawnWithPositions" />
+    <MESSAGE value="feat: add updatePositionOfPiece" />
+    <MESSAGE value="feat: green &#10;testUpdatePiecePositionOfId" />
+    <MESSAGE value="feat: green &#10;estUpdatePiecePositionOfIdInPositionOutGrid" />
+    <MESSAGE value="feat: green testPiecePositionFromId" />
+    <MESSAGE value="refactor: LogicsImpl" />
+    <MESSAGE value="refactor: movement" />
+    <MESSAGE value="refactor: improv dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: improv dependencies" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
