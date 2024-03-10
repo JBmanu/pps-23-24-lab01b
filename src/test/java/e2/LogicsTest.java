@@ -5,11 +5,12 @@ import e1.piece.position.SimplePosition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LogicsTest {
 
-    public static final int SIZE = 7;
+    public static final int SIZE = 5;
     private Logics logics;
 
     @BeforeEach
@@ -18,14 +19,14 @@ public class LogicsTest {
     }
 
     @Test
-    public void testPositionOfMine() {
-        final Position position = new SimplePosition(0, 0);
-        final boolean isMinePosition = this.logics.isMine(position);
+    public void testOnePositionOfMine() {
+        final Position minePosition = new SimplePosition(0, 0);
+        final Position freePosition = new SimplePosition(0, 1);
+        final boolean isMinePosition = this.logics.isMine(minePosition);
+        final boolean isFreePosition = this.logics.isMine(freePosition);
         assertTrue(isMinePosition);
+        assertFalse(isFreePosition);
     }
-
-
-
 
 
 }
