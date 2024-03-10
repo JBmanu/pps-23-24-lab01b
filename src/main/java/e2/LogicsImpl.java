@@ -15,7 +15,7 @@ public class LogicsImpl implements Logics {
 
     @Override
     public boolean hasLose(final Position position) {
-        return false;
+        return this.isMine(position);
     }
 
     @Override

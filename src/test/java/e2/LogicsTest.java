@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class LogicsTest {
 
     public static final int SIZE = 5;
+    public static final Position MINE_POSITION = new SimplePosition(0, 0);
+    public static final Position FREE_POSITION = new SimplePosition(0, 1);
     private Logics logics;
 
     @BeforeEach
@@ -20,13 +22,16 @@ public class LogicsTest {
 
     @Test
     public void testOnePositionOfMine() {
-        final Position minePosition = new SimplePosition(0, 0);
-        final Position freePosition = new SimplePosition(0, 1);
-        final boolean isMinePosition = this.logics.isMine(minePosition);
-        final boolean isFreePosition = this.logics.isMine(freePosition);
+        final boolean isMinePosition = this.logics.isMine(MINE_POSITION);
+        final boolean isFreePosition = this.logics.isMine(FREE_POSITION);
         assertTrue(isMinePosition);
         assertFalse(isFreePosition);
     }
 
+    @Test
+    public void loseGame() {
+        final boolean hasLose = this.logics.hasLose(MINE_POSITION);
+        assertTrue(hasLose);
+    }
 
 }
