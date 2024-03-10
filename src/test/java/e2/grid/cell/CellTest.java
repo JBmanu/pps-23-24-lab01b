@@ -18,10 +18,9 @@ public class CellTest {
     }
 
     @Test
-    public void readPosition() {
-        final boolean equalPosition = this.cell.position().equals(POSITION);
+    public void testEqualsPosition() {
+        final boolean equalPosition = this.cell.equalsPosition(POSITION);
         assertTrue(equalPosition);
     }
-
 
 }
