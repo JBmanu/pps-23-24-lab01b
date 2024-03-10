@@ -18,7 +18,7 @@ public class LogicsImpl implements Logics {
 
     @Override
     public boolean hasWin() {
-        return false;
+        return this.grid.hasWin();
     }
 
     @Override
@@ -33,7 +33,7 @@ public class LogicsImpl implements Logics {
 
     @Override
     public void setMinesAroundOf(final Position position) {
-        this.grid.setMineAroundOf(position);
+        this.grid.setMinesAroundOf(position);
     }
 
     @Override

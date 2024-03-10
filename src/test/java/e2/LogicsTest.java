@@ -45,4 +45,15 @@ public class LogicsTest {
         assertTrue(this.logics.haveBeenComputeMinesOf(FREE_POSITION));
     }
 
+    @Test
+    public void winGame() {
+        final int startOfFor = 0;
+        for (int row = startOfFor; row < SIZE; row++) {
+            for (int colum = startOfFor; colum < SIZE; colum++) {
+                this.logics.setMinesAroundOf(new SimplePosition(row, colum));
+            }
+        }
+        assertTrue(this.logics.hasWin());
+    }
+
 }

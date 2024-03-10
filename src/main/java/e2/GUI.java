@@ -53,7 +53,8 @@ public class GUI extends JFrame {
                     final Pair<Integer, Integer> pos = buttons.get(bt);
                     // call the logic here to put/remove a flag
                     final Position position = new SimplePosition(pos.getX(), pos.getY());
-                    GUI.this.logics.updateMinesCounter(position);
+                    GUI.this.logics.setMinesAroundOf(position);
+                    bt.setEnabled(false);
                 }
                 drawBoard();
             }
@@ -100,9 +101,10 @@ public class GUI extends JFrame {
             final Pair<Integer, Integer> buttonPairPosition = entry.getValue();
             final Position buttonPosition = new SimplePosition(buttonPairPosition.getX(), buttonPairPosition.getY());
             final boolean isMine = this.logics.isMine(buttonPosition);
-            if (!isMine) {
+            final boolean haveBeenComputeMines = this.logics.haveBeenComputeMinesOf(buttonPosition);
+            if (!isMine && haveBeenComputeMines) {
                 final JButton button = entry.getKey();
-                button.setText(this.logics.minesCountFrom(buttonPosition) + "");
+                button.setText(this.logics.minesCountOf(buttonPosition) + "");
             }
         }
     }
