@@ -10,7 +10,7 @@ public class LogicsImpl implements Logics {
 
     public LogicsImpl(final int size) {
         this.grid = new GridImpl(size);
-        this.grid.setMine(new SimplePosition(0, 0));
+        this.grid.skillsLikeMineOf(new SimplePosition(0, 0));
     }
 
     @Override
@@ -29,12 +29,17 @@ public class LogicsImpl implements Logics {
     }
 
     @Override
-    public int minesCountFrom(final Position position) {
-        return this.grid.minesCountFrom(position);
+    public int minesCountOf(final Position position) {
+        return this.grid.minesCountOf(position);
     }
 
     @Override
-    public void updateMinesCounter(final Position position) {
+    public void setMinesAroundOf(final Position position) {
+        this.grid.setMineAroundOf(position);
+    }
 
+    @Override
+    public boolean haveBeenComputeMinesOf(final Position position) {
+        return this.grid.haveBeenComputeMinesOf(position);
     }
 }

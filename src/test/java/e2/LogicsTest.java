@@ -9,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class LogicsTest {
     public static final int SIZE = 5;
+    public static final int ONE_MINE = 1;
     public static final Position MINE_POSITION = new SimplePosition(0, 0);
     public static final Position FREE_POSITION = new SimplePosition(0, 1);
     private Logics logics;
@@ -34,7 +35,13 @@ public class LogicsTest {
 
     @Test
     public void minesCountFromPosition() {
-        assertEquals(1, this.logics.minesCountFrom(FREE_POSITION));
+        assertEquals(ONE_MINE, this.logics.minesCountOf(FREE_POSITION));
+    }
+
+    @Test
+    public void setMineAroundOfPosition() {
+        this.logics.setMinesAroundOf(FREE_POSITION);
+        assertTrue(this.logics.haveBeenComputeMinesOf(FREE_POSITION));
     }
 
 }
