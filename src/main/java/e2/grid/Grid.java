@@ -9,7 +9,9 @@ public interface Grid {
 
     int minesCountOf(final Position position);
 
-    void setMineAroundOf(final Position position);
+    void setMinesAroundOf(final Position position);
 
     boolean haveBeenComputeMinesOf(Position position);
+
+    boolean hasWin();
 }

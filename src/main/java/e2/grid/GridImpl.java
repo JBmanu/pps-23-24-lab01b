@@ -5,9 +5,11 @@ import e1.piece.position.SimplePosition;
 import e2.grid.cell.Cell;
 import e2.grid.cell.CellImpl;
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class GridImpl implements Grid {
+    public static final int CONDITION_WINNER = 0;
     final Cell[][] grid;
 
     public GridImpl(final int size) {
@@ -50,7 +52,7 @@ public class GridImpl implements Grid {
     }
 
     @Override
-    public void setMineAroundOf(final Position position) {
+    public void setMinesAroundOf(final Position position) {
         final Cell cell = this.cellOf(position);
 
         final int y = position.y();
@@ -76,6 +78,16 @@ public class GridImpl implements Grid {
     @Override
     public boolean haveBeenComputeMinesOf(final Position position) {
         return this.cellOf(position).haveBeenComputeMines();
+    }
+
+    @Override
+    public boolean hasWin() {
+        final long remainingCellsOfMineCalculation = Arrays.stream(this.grid).flatMap(Arrays::stream)
+                .filter(cell -> !cell.isMine())
+                .filter(cell -> !cell.haveBeenComputeMines())
+                .count();
+
+        return remainingCellsOfMineCalculation == CONDITION_WINNER;
     }
 
 

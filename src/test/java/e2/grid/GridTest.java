@@ -38,7 +38,7 @@ public class GridTest {
     @Test
     public void minesCountFromPosition() {
         this.grid.skillsLikeMineOf(MINE_POSITION);
-        this.grid.setMineAroundOf(FREE_POSITION);
+        this.grid.setMinesAroundOf(FREE_POSITION);
         final int minesCountFromPosition = this.grid.minesCountOf(FREE_POSITION);
         assertEquals(MINE_COUNT, minesCountFromPosition);
     }
@@ -47,7 +47,7 @@ public class GridTest {
     public void minesCountInCornerUpLeftPosition() {
         final Position minePositionNearCornerUpLeft = new SimplePosition(0, 1);
         this.grid.skillsLikeMineOf(minePositionNearCornerUpLeft);
-        this.grid.setMineAroundOf(CORNER_UP_LEFT_POSITION);
+        this.grid.setMinesAroundOf(CORNER_UP_LEFT_POSITION);
         final int minesCountFromPosition = this.grid.minesCountOf(CORNER_UP_LEFT_POSITION);
         assertEquals(MINE_COUNT, minesCountFromPosition);
     }
@@ -57,7 +57,7 @@ public class GridTest {
         final Position minePositionNearCornerDownRight
                 = new SimplePosition(CORNER_DOWN_RIGHT_POSITION.x() - 1,CORNER_DOWN_RIGHT_POSITION.y());
         this.grid.skillsLikeMineOf(minePositionNearCornerDownRight);
-        this.grid.setMineAroundOf(CORNER_DOWN_RIGHT_POSITION);
+        this.grid.setMinesAroundOf(CORNER_DOWN_RIGHT_POSITION);
         final int minesCountFromPosition = this.grid.minesCountOf(CORNER_DOWN_RIGHT_POSITION);
         assertEquals(MINE_COUNT, minesCountFromPosition);
     }
@@ -65,9 +65,21 @@ public class GridTest {
     @Test
     public void haveBeenComputeMinesOfPosition() {
         assertFalse(this.grid.haveBeenComputeMinesOf(FREE_POSITION));
-        this.grid.setMineAroundOf(FREE_POSITION);
+        this.grid.setMinesAroundOf(FREE_POSITION);
         assertTrue(this.grid.haveBeenComputeMinesOf(FREE_POSITION));
     }
+
+    @Test
+    public void winGame() {
+        final int startOfFor = 0;
+        for (int row = startOfFor; row < SIZE; row++) {
+            for (int colum = startOfFor; colum < SIZE; colum++) {
+                this.grid.setMinesAroundOf(new SimplePosition(row, colum));
+            }
+        }
+        assertTrue(this.grid.hasWin());
+    }
+
 
 
 }
