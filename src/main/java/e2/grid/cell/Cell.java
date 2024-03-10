@@ -7,6 +7,7 @@ public interface Cell {
     void skillsLikeMine();
     boolean isMine();
 
+    int minesAround();
     void setMinesAround(final int count);
     boolean haveBeenComputeMines();
 

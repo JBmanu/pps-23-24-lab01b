@@ -27,6 +27,11 @@ public class CellImpl implements Cell {
     }
 
     @Override
+    public int minesAround() {
+        return this.countMines;
+    }
+
+    @Override
     public void setMinesAround(final int count) {
         this.countMines = count;
         this.haveBeenComputeMines = true;

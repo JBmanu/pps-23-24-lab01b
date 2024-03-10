@@ -5,8 +5,7 @@ import e1.piece.position.SimplePosition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CellTest {
 
@@ -35,6 +34,7 @@ public class CellTest {
         assertFalse(this.cell.haveBeenComputeMines());
         this.cell.setMinesAround(5);
         assertTrue(this.cell.haveBeenComputeMines());
+        assertEquals(5, this.cell.minesAround());
     }
 
 }
