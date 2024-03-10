@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: create interface logics">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/e2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +114,7 @@
     "Gradle.LogicsTest.testKnightHit.executor": "Run",
     "Gradle.LogicsTest.testKnightNotHit.executor": "Run",
     "Gradle.LogicsTest.testKnightOverlayPawn.executor": "Run",
+    "Gradle.LogicsTest.testPositionOfMine.executor": "Run",
     "Gradle.LogicsWithSetManualPositionTest.executor": "Run",
     "Gradle.LogicsWithSetManualPositionTest.testBoundWhenSetKnightBottomRightCornerAndMoveDirectionBottom.executor": "Run",
     "Gradle.LogicsWithSetManualPositionTest.testBoundWhenSetKnightBottomRightCornerAndMoveDirectionRight.executor": "Run",
@@ -227,7 +228,7 @@
       <recent name="e1.piece.movement" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.LogicsTest.testPositionOfMine">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="e2.Main" />
       <module name="pps-23-24-lab01b.main" />
@@ -256,6 +257,30 @@
         <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration name="LogicsTest.testPositionOfMine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e2.LogicsTest.testPositionOfMine&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="PieceTest.testCreatePieceWithNullParameters" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -270,30 +295,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;e1.piece.PieceTest.testCreatePieceWithNullParameters&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="PieceTest.testEqualsPosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;e1.piece.PieceTest.testEqualsPosition&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -330,11 +331,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LogicsTest.testPositionOfMine" />
         <item itemvalue="Application.e1.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Tests in 'e1'" />
         <item itemvalue="Gradle.PieceTest.testCreatePieceWithNullParameters" />
-        <item itemvalue="Gradle.PieceTest.testEqualsPosition" />
       </list>
     </recent_temporary>
   </component>
@@ -373,23 +374,7 @@
       <workItem from="1709634869857" duration="4203000" />
       <workItem from="1709648005804" duration="49865000" />
       <workItem from="1709905651349" duration="2429000" />
-      <workItem from="1709908362784" duration="20660000" />
-    </task>
-    <task id="LOCAL-00120" summary="feat: green testSetNewPositionAndChangeNewPosition">
-      <option name="closed" value="true" />
-      <created>1709819817153</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1709819817153</updated>
-    </task>
-    <task id="LOCAL-00121" summary="feat: green canCreateKnight">
-      <option name="closed" value="true" />
-      <created>1709820323567</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1709820323567</updated>
+      <workItem from="1709908362784" duration="21766000" />
     </task>
     <task id="LOCAL-00122" summary="feat: green canCreateFixedPiece">
       <option name="closed" value="true" />
@@ -767,14 +752,29 @@
       <option name="project" value="LOCAL" />
       <updated>1710095805576</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="feat: create interface logics">
+      <option name="closed" value="true" />
+      <created>1710097365226</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1710097365226</updated>
+    </task>
+    <task id="LOCAL-00170" summary="feat: create interface logics">
+      <option name="closed" value="true" />
+      <created>1710097723055</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1710097723055</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: green testNotFindFirstPiece" />
     <MESSAGE value="refactor: improv StaticFactoryPiece, finish es 1" />
     <MESSAGE value="refactor: clean up space" />
     <MESSAGE value="refactor: position test+impl" />
@@ -798,6 +798,7 @@
     <MESSAGE value="refactor: improv dependencies" />
     <MESSAGE value="feat: add files in fork" />
     <MESSAGE value="feat: check all test" />
+    <MESSAGE value="feat: add fun in lo" />
     <MESSAGE value="feat: create interface logics" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: create interface logics" />
   </component>
