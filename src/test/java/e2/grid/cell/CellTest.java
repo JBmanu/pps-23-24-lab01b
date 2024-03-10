@@ -18,9 +18,15 @@ public class CellTest {
     }
 
     @Test
-    public void testEqualsPosition() {
+    public void equalsPosition() {
         final boolean equalPosition = this.cell.equalsPosition(POSITION);
         assertTrue(equalPosition);
+    }
+
+    @Test
+    public void setCellMine() {
+        this.cell.setMine();
+        assertTrue(this.cell.isMine());
     }
 
 }

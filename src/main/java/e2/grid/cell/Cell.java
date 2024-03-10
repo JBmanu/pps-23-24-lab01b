@@ -4,7 +4,8 @@ import e1.piece.position.Position;
 
 public interface Cell {
 
-    Position position();
+    void setMine();
+    boolean equalsPosition(final Position position);
     boolean isMine();
 
 
