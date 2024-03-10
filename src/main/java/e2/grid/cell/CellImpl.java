@@ -5,14 +5,14 @@ import e1.piece.position.Position;
 public class CellImpl implements Cell {
     private final Position position;
     private int countMines;
-    private boolean haveBeenComputeMines;
+    private boolean isShowCell;
     boolean isMine;
 
     public CellImpl(final Position position) {
         this.position = position;
         this.isMine = false;
         this.countMines = 0;
-        this.haveBeenComputeMines = false;
+        this.isShowCell = false;
     }
 
 
@@ -27,19 +27,23 @@ public class CellImpl implements Cell {
     }
 
     @Override
+    public void setMinesAround(final int mines) {
+        this.countMines = mines;
+    }
+
+    @Override
     public int minesAround() {
         return this.countMines;
     }
 
     @Override
-    public void setMinesAround(final int count) {
-        this.countMines = count;
-        this.haveBeenComputeMines = true;
+    public void showCell() {
+        this.isShowCell = true;
     }
 
     @Override
-    public boolean haveBeenComputeMines() {
-        return this.haveBeenComputeMines;
+    public boolean isShowCell() {
+        return this.isShowCell;
     }
 
     @Override

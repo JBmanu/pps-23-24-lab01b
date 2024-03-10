@@ -7,9 +7,11 @@ public interface Cell {
     void skillsLikeMine();
     boolean isMine();
 
+    void setMinesAround(final int mines);
     int minesAround();
-    void setMinesAround(final int count);
-    boolean haveBeenComputeMines();
+
+    void showCell();
+    boolean isShowCell();
 
     boolean equalsPosition(final Position position);
 

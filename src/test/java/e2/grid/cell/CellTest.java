@@ -30,11 +30,17 @@ public class CellTest {
     }
 
     @Test
-    public void setMinesAround() {
-        assertFalse(this.cell.haveBeenComputeMines());
-        this.cell.setMinesAround(5);
-        assertTrue(this.cell.haveBeenComputeMines());
-        assertEquals(5, this.cell.minesAround());
+    public void showCell() {
+        assertFalse(this.cell.isShowCell());
+        this.cell.showCell();
+        assertTrue(this.cell.isShowCell());
+    }
+
+    @Test
+    public void readMinesAround() {
+        final int minesAround = 5;
+        this.cell.setMinesAround(minesAround);
+        assertEquals(minesAround, this.cell.minesAround());
     }
 
 }
