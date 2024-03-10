@@ -22,7 +22,7 @@ public class GridImpl implements Grid {
     }
 
     @Override
-    public void setMine(final Position position) {
+    public void skillsLikeMineOf(final Position position) {
         final int y = position.y();
         final int x = position.x();
         this.grid[x][y].skillsLikeMine();
@@ -41,7 +41,7 @@ public class GridImpl implements Grid {
     }
 
     @Override
-    public int minesCountFrom(final Position position) {
+    public int minesCountOf(final Position position) {
         final int y = position.y();
         final int x = position.x();
         final int startCell = x - 1;
@@ -59,11 +59,11 @@ public class GridImpl implements Grid {
     }
 
     @Override
-    public void pushMinesCount(final Position position) {
+    public void setMineAroundOf(final Position position) {
         final int y = position.y();
         final int x = position.x();
         final Cell cell = this.grid[x][y];
-        cell.setMinesAround(this.minesCountFrom(position));
+        cell.setMinesAround(this.minesCountOf(position));
     }
 
 

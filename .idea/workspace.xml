@@ -9,13 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: green minesCountInCornerUpLeftPosition">
+    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: green minesCountFromPosition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/Logics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/Logics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/GridTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/grid/GridTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/cell/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/cell/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/cell/CellImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/cell/CellImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/cell/CellTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/grid/cell/CellTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +269,7 @@
       <recent name="e2.grid" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GridTest.minesCountFromPosition">
+  <component name="RunManager" selected="Gradle.LogicsTest.minesCountFromPosition">
     <configuration name="GridTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -363,7 +366,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GridTest.minesCountInPositionCorner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LogicsTest.minesCountFromPosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -376,7 +379,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e2.grid.GridTest.minesCountInPositionCorner&quot;" />
+            <option value="&quot;e2.LogicsTest.minesCountFromPosition&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -389,11 +392,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LogicsTest.minesCountFromPosition" />
+        <item itemvalue="Gradle.GridTest" />
         <item itemvalue="Gradle.GridTest.minesCountFromPosition" />
         <item itemvalue="Gradle.GridTest.minesCountInCornerUpLeftPosition" />
         <item itemvalue="Gradle.GridTest.minesCountInCornerDownRightPosition" />
-        <item itemvalue="Gradle.GridTest" />
-        <item itemvalue="Gradle.GridTest.minesCountInPositionCorner" />
       </list>
     </recent_temporary>
   </component>
@@ -420,6 +423,13 @@
       </map>
     </option>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -433,23 +443,7 @@
       <workItem from="1709648005804" duration="49865000" />
       <workItem from="1709905651349" duration="2429000" />
       <workItem from="1709908362784" duration="28250000" />
-      <workItem from="1710104578974" duration="10000" />
-    </task>
-    <task id="LOCAL-00135" summary="feat: add IdPiece enum">
-      <option name="closed" value="true" />
-      <created>1709830853819</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1709830853820</updated>
-    </task>
-    <task id="LOCAL-00136" summary="feat: add IdPiece enum">
-      <option name="closed" value="true" />
-      <created>1709830970622</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1709830970622</updated>
+      <workItem from="1710104578974" duration="2428000" />
     </task>
     <task id="LOCAL-00137" summary="feat: green testFindFirstPiece">
       <option name="closed" value="true" />
@@ -827,14 +821,29 @@
       <option name="project" value="LOCAL" />
       <updated>1710102661241</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="feat: green minesCountInCornerDownRightPosition">
+      <option name="closed" value="true" />
+      <created>1710105984017</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1710105984018</updated>
+    </task>
+    <task id="LOCAL-00185" summary="feat: green minesCountFromPosition">
+      <option name="closed" value="true" />
+      <created>1710105997303</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1710105997303</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: green canCreateStaticFactoryGridChess" />
     <MESSAGE value="feat: green testCanCreateGridWithKnightAndIdlePawn" />
     <MESSAGE value="feat: green testCanCreateGridWithKnightAndIdlePawnWithPositions" />
     <MESSAGE value="feat: add updatePositionOfPiece" />
@@ -857,20 +866,10 @@
     <MESSAGE value="feat: green checkMinePosition" />
     <MESSAGE value="refactor: LogicsImpl" />
     <MESSAGE value="feat: green loseGame" />
-    <MESSAGE value="feat: green minesCountFromPosition" />
     <MESSAGE value="feat: green minesCountInCornerUpLeftPosition" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: green minesCountInCornerUpLeftPosition" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="feat: green minesCountInCornerDownRightPosition" />
+    <MESSAGE value="feat: green minesCountFromPosition" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: green minesCountFromPosition" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

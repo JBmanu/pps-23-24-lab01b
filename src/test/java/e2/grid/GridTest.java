@@ -23,12 +23,12 @@ public class GridTest {
 
     @Test
     public void setMineInPosition() {
-        this.grid.setMine(MINE_POSITION);
+        this.grid.skillsLikeMineOf(MINE_POSITION);
     }
 
     @Test
     public void checkMinePosition() {
-        this.grid.setMine(MINE_POSITION);
+        this.grid.skillsLikeMineOf(MINE_POSITION);
         final boolean isMine = this.grid.isMine(MINE_POSITION);
         final boolean isFree = this.grid.isMine(FREE_POSITION);
         assertTrue(isMine);
@@ -37,16 +37,16 @@ public class GridTest {
 
     @Test
     public void minesCountFromPosition() {
-        this.grid.setMine(MINE_POSITION);
-        final int minesCountFromPosition = this.grid.minesCountFrom(FREE_POSITION);
+        this.grid.skillsLikeMineOf(MINE_POSITION);
+        final int minesCountFromPosition = this.grid.minesCountOf(FREE_POSITION);
         assertEquals(MINE_COUNT, minesCountFromPosition);
     }
 
     @Test
     public void minesCountInCornerUpLeftPosition() {
         final Position minePositionNearCornerUpLeft = new SimplePosition(0, 1);
-        this.grid.setMine(minePositionNearCornerUpLeft);
-        final int minesCountFromPosition = this.grid.minesCountFrom(CORNER_UP_LEFT_POSITION);
+        this.grid.skillsLikeMineOf(minePositionNearCornerUpLeft);
+        final int minesCountFromPosition = this.grid.minesCountOf(CORNER_UP_LEFT_POSITION);
         assertEquals(MINE_COUNT, minesCountFromPosition);
     }
 
@@ -54,8 +54,8 @@ public class GridTest {
     public void minesCountInCornerDownRightPosition() {
         final Position minePositionNearCornerDownRight
                 = new SimplePosition(CORNER_DOWN_RIGHT_POSITION.x() - 1,CORNER_DOWN_RIGHT_POSITION.y());
-        this.grid.setMine(minePositionNearCornerDownRight);
-        final int minesCountFromPosition = this.grid.minesCountFrom(CORNER_DOWN_RIGHT_POSITION);
+        this.grid.skillsLikeMineOf(minePositionNearCornerDownRight);
+        final int minesCountFromPosition = this.grid.minesCountOf(CORNER_DOWN_RIGHT_POSITION);
         assertEquals(MINE_COUNT, minesCountFromPosition);
     }
 }
