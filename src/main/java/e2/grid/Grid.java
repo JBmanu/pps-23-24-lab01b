@@ -6,4 +6,6 @@ public interface Grid {
     void setMine(final Position position);
 
     boolean isMine(final Position position);
+
+    int minesCountFrom(final Position position);
 }

@@ -5,6 +5,9 @@ import e1.piece.position.SimplePosition;
 import e2.grid.cell.Cell;
 import e2.grid.cell.CellImpl;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GridImpl implements Grid {
     final Cell[][] grid;
 
@@ -31,5 +34,24 @@ public class GridImpl implements Grid {
         final int y = position.y();
         final int x = position.x();
         return this.grid[x][y].isMine();
+    }
+
+    @Override
+    public int minesCountFrom(final Position position) {
+        final List<Cell> cells = new ArrayList<>();
+        final int y = position.y();
+        final int x = position.x();
+        final int startCell = x - 1;
+        final int endCell = y + 2;
+
+        for (int row = startCell; row < endCell; row++) {
+            for (int colum = startCell; colum < endCell; colum++) {
+                cells.add(this.grid[row][colum]);
+            }
+        }
+
+
+        cells.remove(this.grid[x][y]);
+        return (int)cells.stream().filter(Cell::isMine).count();
     }
 }

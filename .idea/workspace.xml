@@ -9,7 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="refactor: LogicsImpl">
+    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: green loseGame">
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/Logics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/Logics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +114,7 @@
     "Gradle.LogicTest.testArePresentKnightAndPawn.executor": "Run",
     "Gradle.LogicTest.testKnightOverlayPawn.executor": "Run",
     "Gradle.LogicsTest.executor": "Run",
+    "Gradle.LogicsTest.loseGame.executor": "Run",
     "Gradle.LogicsTest.testArePresentKnightAndPawn.executor": "Run",
     "Gradle.LogicsTest.testBoundWhenSetKnightUpLeftCornerAndMoveDirectionLeft.executor": "Run",
     "Gradle.LogicsTest.testCanKnightAndPawnSetPosition.executor": "Debug",
@@ -396,15 +400,7 @@
       <workItem from="1709634869857" duration="4203000" />
       <workItem from="1709648005804" duration="49865000" />
       <workItem from="1709905651349" duration="2429000" />
-      <workItem from="1709908362784" duration="24608000" />
-    </task>
-    <task id="LOCAL-00132" summary="feat: green testAddPieceInEmptyPosition">
-      <option name="closed" value="true" />
-      <created>1709828712658</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1709828712658</updated>
+      <workItem from="1709908362784" duration="24990000" />
     </task>
     <task id="LOCAL-00133" summary="refactor: testAddPieceInEmptyPosition">
       <option name="closed" value="true" />
@@ -790,14 +786,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710100901138</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="feat: green loseGame">
+      <option name="closed" value="true" />
+      <created>1710101183382</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1710101183382</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: green testCreateIdlePawnInGridInEmptyPosition" />
     <MESSAGE value="refactor: LogicsImpl with StaticFactoryPiece" />
     <MESSAGE value="fix: error in constructor LogicsImpl" />
     <MESSAGE value="feat: green canCreateStaticFactoryGridChess" />
@@ -822,7 +825,8 @@
     <MESSAGE value="feat: green setMineInPosition" />
     <MESSAGE value="feat: green checkMinePosition" />
     <MESSAGE value="refactor: LogicsImpl" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: LogicsImpl" />
+    <MESSAGE value="feat: green loseGame" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: green loseGame" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

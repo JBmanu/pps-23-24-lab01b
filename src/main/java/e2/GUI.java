@@ -102,7 +102,7 @@ public class GUI extends JFrame {
             final boolean isMine = this.logics.isMine(buttonPosition);
             if (!isMine) {
                 final JButton button = entry.getKey();
-                button.setText(this.logics.minesCount(buttonPosition) + "");
+                button.setText(this.logics.minesCountFrom(buttonPosition) + "");
             }
         }
     }
