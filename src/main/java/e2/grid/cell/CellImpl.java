@@ -4,17 +4,37 @@ import e1.piece.position.Position;
 
 public class CellImpl implements Cell {
     private final Position position;
+    private int countMines;
+    private boolean haveBeenComputeMines;
     boolean isMine;
 
     public CellImpl(final Position position) {
         this.position = position;
         this.isMine = false;
+        this.countMines = 0;
+        this.haveBeenComputeMines = false;
     }
 
 
     @Override
-    public void setMine() {
+    public void skillsLikeMine() {
         this.isMine = true;
+    }
+
+    @Override
+    public boolean isMine() {
+        return this.isMine;
+    }
+
+    @Override
+    public void setMinesAround(final int count) {
+        this.countMines = count;
+        this.haveBeenComputeMines = true;
+    }
+
+    @Override
+    public boolean haveBeenComputeMines() {
+        return this.haveBeenComputeMines;
     }
 
     @Override
@@ -22,8 +42,4 @@ public class CellImpl implements Cell {
         return this.position.equals(position);
     }
 
-    @Override
-    public boolean isMine() {
-        return this.isMine;
-    }
 }

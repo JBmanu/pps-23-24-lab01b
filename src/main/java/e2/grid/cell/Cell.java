@@ -4,9 +4,12 @@ import e1.piece.position.Position;
 
 public interface Cell {
 
-    void setMine();
-    boolean equalsPosition(final Position position);
+    void skillsLikeMine();
     boolean isMine();
 
+    void setMinesAround(final int count);
+    boolean haveBeenComputeMines();
+
+    boolean equalsPosition(final Position position);
 
 }

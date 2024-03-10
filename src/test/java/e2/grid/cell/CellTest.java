@@ -5,6 +5,7 @@ import e1.piece.position.SimplePosition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CellTest {
@@ -24,9 +25,16 @@ public class CellTest {
     }
 
     @Test
-    public void setCellMine() {
-        this.cell.setMine();
+    public void skillsLikeMine() {
+        this.cell.skillsLikeMine();
         assertTrue(this.cell.isMine());
+    }
+
+    @Test
+    public void setMinesAround() {
+        assertFalse(this.cell.haveBeenComputeMines());
+        this.cell.setMinesAround(5);
+        assertTrue(this.cell.haveBeenComputeMines());
     }
 
 }
