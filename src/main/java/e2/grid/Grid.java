@@ -8,4 +8,6 @@ public interface Grid {
     boolean isMine(final Position position);
 
     int minesCountFrom(final Position position);
+
+    void pushMinesCount(final Position position);
 }
