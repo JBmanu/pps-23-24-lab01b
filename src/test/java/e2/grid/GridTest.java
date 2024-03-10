@@ -58,4 +58,13 @@ public class GridTest {
         final int minesCountFromPosition = this.grid.minesCountOf(CORNER_DOWN_RIGHT_POSITION);
         assertEquals(MINE_COUNT, minesCountFromPosition);
     }
+
+    @Test
+    public void haveBeenComputeMinesOfPosition() {
+        assertFalse(this.grid.haveBeenComputeMinesOf(FREE_POSITION));
+        this.grid.setMineAroundOf(FREE_POSITION);
+        assertTrue(this.grid.haveBeenComputeMinesOf(FREE_POSITION));
+    }
+
+
 }

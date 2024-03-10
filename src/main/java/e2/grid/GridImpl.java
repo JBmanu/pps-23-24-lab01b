@@ -21,18 +21,20 @@ public class GridImpl implements Grid {
         }
     }
 
-    @Override
-    public void skillsLikeMineOf(final Position position) {
+    private Cell cellOf(final Position position) {
         final int y = position.y();
         final int x = position.x();
-        this.grid[x][y].skillsLikeMine();
+        return this.grid[x][y];
+    }
+
+    @Override
+    public void skillsLikeMineOf(final Position position) {
+        this.cellOf(position).skillsLikeMine();
     }
 
     @Override
     public boolean isMine(final Position position) {
-        final int y = position.y();
-        final int x = position.x();
-        return this.grid[x][y].isMine();
+        return this.cellOf(position).isMine();
     }
 
     private boolean checkBounds(final int row, final int colum) {
@@ -60,10 +62,14 @@ public class GridImpl implements Grid {
 
     @Override
     public void setMineAroundOf(final Position position) {
-        final int y = position.y();
-        final int x = position.x();
-        final Cell cell = this.grid[x][y];
+        final Cell cell = this.cellOf(position);
         cell.setMinesAround(this.minesCountOf(position));
+    }
+
+
+    @Override
+    public boolean haveBeenComputeMinesOf(final Position position) {
+        return this.cellOf(position).haveBeenComputeMines();
     }
 
 
