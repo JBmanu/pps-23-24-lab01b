@@ -4,4 +4,6 @@ import e1.piece.position.Position;
 
 public interface Grid {
     void setMine(final Position position);
+
+    boolean isMine(final Position position);
 }

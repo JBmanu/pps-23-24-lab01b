@@ -9,9 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: create interface logics">
+    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: green setMineInPosition">
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/GridTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/grid/GridTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +39,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
-        <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -70,6 +72,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.CellTest.ReadPosition.executor": "Run",
+    "Gradle.CellTest.checkOtherPosition.executor": "Run",
+    "Gradle.CellTest.setCellMine.executor": "Run",
+    "Gradle.CellTest.testEqualsPosition.executor": "Run",
     "Gradle.GridChessTest.canCreateGrid.executor": "Run",
     "Gradle.GridChessTest.estUpdatePiecePositionOfIdInPositionOutGrid.executor": "Run",
     "Gradle.GridChessTest.executor": "Run",
@@ -88,6 +94,9 @@
     "Gradle.GridChessTest.testReadPositionAfterAddPiece.executor": "Run",
     "Gradle.GridChessTest.testReadSize.executor": "Run",
     "Gradle.GridChessTest.testUpdatePiecePositionOfId.executor": "Run",
+    "Gradle.GridTest.canCreateGrid.executor": "Run",
+    "Gradle.GridTest.checkMinePosition.executor": "Run",
+    "Gradle.GridTest.setMineInPosition.executor": "Run",
     "Gradle.KnightMovementTest.canCreateKnightMovement.executor": "Run",
     "Gradle.KnightMovementTest.executor": "Run",
     "Gradle.KnightMovementTest.testGridPositionsOfThreeStepFromCenter.executor": "Run",
@@ -114,6 +123,8 @@
     "Gradle.LogicsTest.testKnightHit.executor": "Run",
     "Gradle.LogicsTest.testKnightNotHit.executor": "Run",
     "Gradle.LogicsTest.testKnightOverlayPawn.executor": "Run",
+    "Gradle.LogicsTest.testMultiplePositionOfMine.executor": "Run",
+    "Gradle.LogicsTest.testOnePositionOfMine.executor": "Run",
     "Gradle.LogicsTest.testPositionOfMine.executor": "Run",
     "Gradle.LogicsWithSetManualPositionTest.executor": "Run",
     "Gradle.LogicsWithSetManualPositionTest.testBoundWhenSetKnightBottomRightCornerAndMoveDirectionBottom.executor": "Run",
@@ -216,10 +227,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="e2.grid" />
+      <recent name="e2.grid.cell" />
       <recent name="e1.grid" />
       <recent name="e1.piece.movement" />
       <recent name="e1.piece" />
-      <recent name="e1.model" />
     </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="e1.piece.movement.MovementTest" />
@@ -227,37 +239,12 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="e1.piece.movement" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="e2.grid" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.LogicsTest.testPositionOfMine">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="e2.Main" />
-      <module name="pps-23-24-lab01b.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="e2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration name="e1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="e1.Main" />
-      <module name="pps-23-24-lab01b.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="e1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration name="LogicsTest.testPositionOfMine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.GridTest.checkMinePosition">
+    <configuration name="CellTest.setCellMine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -270,7 +257,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e2.LogicsTest.testPositionOfMine&quot;" />
+            <option value="&quot;e2.grid.cell.CellTest.setCellMine&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -281,7 +268,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PieceTest.testCreatePieceWithNullParameters" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GridTest.canCreateGrid" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -294,7 +281,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e1.piece.PieceTest.testCreatePieceWithNullParameters&quot;" />
+            <option value="&quot;e2.grid.GridTest.canCreateGrid&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -305,7 +292,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'e1'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GridTest.checkMinePosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -318,7 +305,55 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e1.*&quot;" />
+            <option value="&quot;e2.grid.GridTest.checkMinePosition&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GridTest.setMineInPosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e2.grid.GridTest.setMineInPosition&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="LogicsTest.testOnePositionOfMine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e2.LogicsTest.testOnePositionOfMine&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -331,11 +366,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LogicsTest.testPositionOfMine" />
-        <item itemvalue="Application.e1.Main" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.Tests in 'e1'" />
-        <item itemvalue="Gradle.PieceTest.testCreatePieceWithNullParameters" />
+        <item itemvalue="Gradle.GridTest.checkMinePosition" />
+        <item itemvalue="Gradle.GridTest.setMineInPosition" />
+        <item itemvalue="Gradle.GridTest.canCreateGrid" />
+        <item itemvalue="Gradle.LogicsTest.testOnePositionOfMine" />
+        <item itemvalue="Gradle.CellTest.setCellMine" />
       </list>
     </recent_temporary>
   </component>
@@ -374,63 +409,7 @@
       <workItem from="1709634869857" duration="4203000" />
       <workItem from="1709648005804" duration="49865000" />
       <workItem from="1709905651349" duration="2429000" />
-      <workItem from="1709908362784" duration="21766000" />
-    </task>
-    <task id="LOCAL-00122" summary="feat: green canCreateFixedPiece">
-      <option name="closed" value="true" />
-      <created>1709820371716</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1709820371716</updated>
-    </task>
-    <task id="LOCAL-00123" summary="feat: green testFunctionsWithNullPosition">
-      <option name="closed" value="true" />
-      <created>1709821297634</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1709821297634</updated>
-    </task>
-    <task id="LOCAL-00124" summary="feat: green testAddPiece">
-      <option name="closed" value="true" />
-      <created>1709822970021</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1709822970021</updated>
-    </task>
-    <task id="LOCAL-00125" summary="feat: green testAddPiece">
-      <option name="closed" value="true" />
-      <created>1709823071470</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1709823071470</updated>
-    </task>
-    <task id="LOCAL-00126" summary="feat: green testReadPositionAfterAddPiece">
-      <option name="closed" value="true" />
-      <created>1709823585554</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1709823585554</updated>
-    </task>
-    <task id="LOCAL-00127" summary="feat: green testAddNull">
-      <option name="closed" value="true" />
-      <created>1709824382215</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1709824382215</updated>
-    </task>
-    <task id="LOCAL-00128" summary="feat: green testGenerateEmptyPosition">
-      <option name="closed" value="true" />
-      <created>1709824847233</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1709824847233</updated>
+      <workItem from="1709908362784" duration="24220000" />
     </task>
     <task id="LOCAL-00129" summary="feat: green testGenerateMultipleEmptyPosition">
       <option name="closed" value="true" />
@@ -768,20 +747,69 @@
       <option name="project" value="LOCAL" />
       <updated>1710097723055</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="feat: green testPositionOfMine">
+      <option name="closed" value="true" />
+      <created>1710098241980</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1710098241980</updated>
+    </task>
+    <task id="LOCAL-00172" summary="feat: green canCreateCell">
+      <option name="closed" value="true" />
+      <created>1710099247879</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1710099247879</updated>
+    </task>
+    <task id="LOCAL-00173" summary="feat: green readPosition">
+      <option name="closed" value="true" />
+      <created>1710099522591</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1710099522591</updated>
+    </task>
+    <task id="LOCAL-00174" summary="feat: green testEqualsPosition">
+      <option name="closed" value="true" />
+      <created>1710099666497</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1710099666497</updated>
+    </task>
+    <task id="LOCAL-00175" summary="feat: green setCellMine">
+      <option name="closed" value="true" />
+      <created>1710099790222</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1710099790222</updated>
+    </task>
+    <task id="LOCAL-00176" summary="feat: green canCreateGrid">
+      <option name="closed" value="true" />
+      <created>1710100092146</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1710100092146</updated>
+    </task>
+    <task id="LOCAL-00177" summary="feat: green setMineInPosition">
+      <option name="closed" value="true" />
+      <created>1710100292264</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1710100292264</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: improv StaticFactoryPiece, finish es 1" />
-    <MESSAGE value="refactor: clean up space" />
-    <MESSAGE value="refactor: position test+impl" />
-    <MESSAGE value="refactor: MovementLogics" />
-    <MESSAGE value="refactor: clean up Piece" />
-    <MESSAGE value="feat: green testEqualId" />
-    <MESSAGE value="refactor: piece" />
     <MESSAGE value="feat: green testCreateKnightInGridInEmptyPosition" />
     <MESSAGE value="feat: green testCreateIdlePawnInGridInEmptyPosition" />
     <MESSAGE value="refactor: LogicsImpl with StaticFactoryPiece" />
@@ -800,7 +828,14 @@
     <MESSAGE value="feat: check all test" />
     <MESSAGE value="feat: add fun in lo" />
     <MESSAGE value="feat: create interface logics" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: create interface logics" />
+    <MESSAGE value="feat: green testPositionOfMine" />
+    <MESSAGE value="feat: green canCreateCell" />
+    <MESSAGE value="feat: green readPosition" />
+    <MESSAGE value="feat: green testEqualsPosition" />
+    <MESSAGE value="feat: green setCellMine" />
+    <MESSAGE value="feat: green canCreateGrid" />
+    <MESSAGE value="feat: green setMineInPosition" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: green setMineInPosition" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
