@@ -19,11 +19,13 @@ public class GridImpl implements Grid {
                 this.grid[row][colum] = new CellImpl(position);
             }
         }
+
+        this.skillsLikeMineOf(new SimplePosition(0, 0));
     }
 
     private Cell cellOf(final Position position) {
-        final int y = position.y();
         final int x = position.x();
+        final int y = position.y();
         return this.grid[x][y];
     }
 
@@ -44,26 +46,30 @@ public class GridImpl implements Grid {
 
     @Override
     public int minesCountOf(final Position position) {
-        final int y = position.y();
-        final int x = position.x();
-        final int startCell = x - 1;
-        final int endCell = y + 1;
-
-        final var cells = IntStream.rangeClosed(startCell, endCell)
-                .boxed()
-                .flatMap(row -> IntStream.rangeClosed(startCell, endCell)
-                        .filter(colum -> this.checkBounds(row, colum))
-                        .filter(colum -> row != x || colum != y)
-                        .mapToObj(colum -> this.grid[row][colum]))
-                .toList();
-
-        return (int) cells.stream().filter(Cell::isMine).count();
+        return this.cellOf(position).minesAround();
     }
 
     @Override
     public void setMineAroundOf(final Position position) {
         final Cell cell = this.cellOf(position);
-        cell.setMinesAround(this.minesCountOf(position));
+
+        final int y = position.y();
+        final int x = position.x();
+        final int startXCell = x - 1;
+        final int endXCell = x + 1;
+        final int startYCell = y - 1;
+        final int endYCell = y + 1;
+
+        final long minesAround = IntStream.rangeClosed(startXCell, endXCell)
+                .boxed()
+                .flatMap(row -> IntStream.rangeClosed(startYCell, endYCell)
+                        .boxed()
+                        .filter(colum -> this.checkBounds(row, colum))
+                        .map(colum -> this.grid[row][colum]))
+                .filter(Cell::isMine)
+                .count();
+
+        cell.setMinesAround((int)minesAround);
     }
 
 

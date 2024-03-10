@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class GridTest {
-    public static final int SIZE = 5;
+    public static final int SIZE = 7;
     public static final int MINE_COUNT = 1;
     public static final Position MINE_POSITION = new SimplePosition(2, 1);
     public static final Position FREE_POSITION = new SimplePosition(2, 2);
@@ -38,6 +38,7 @@ public class GridTest {
     @Test
     public void minesCountFromPosition() {
         this.grid.skillsLikeMineOf(MINE_POSITION);
+        this.grid.setMineAroundOf(FREE_POSITION);
         final int minesCountFromPosition = this.grid.minesCountOf(FREE_POSITION);
         assertEquals(MINE_COUNT, minesCountFromPosition);
     }
@@ -46,6 +47,7 @@ public class GridTest {
     public void minesCountInCornerUpLeftPosition() {
         final Position minePositionNearCornerUpLeft = new SimplePosition(0, 1);
         this.grid.skillsLikeMineOf(minePositionNearCornerUpLeft);
+        this.grid.setMineAroundOf(CORNER_UP_LEFT_POSITION);
         final int minesCountFromPosition = this.grid.minesCountOf(CORNER_UP_LEFT_POSITION);
         assertEquals(MINE_COUNT, minesCountFromPosition);
     }
@@ -55,6 +57,7 @@ public class GridTest {
         final Position minePositionNearCornerDownRight
                 = new SimplePosition(CORNER_DOWN_RIGHT_POSITION.x() - 1,CORNER_DOWN_RIGHT_POSITION.y());
         this.grid.skillsLikeMineOf(minePositionNearCornerDownRight);
+        this.grid.setMineAroundOf(CORNER_DOWN_RIGHT_POSITION);
         final int minesCountFromPosition = this.grid.minesCountOf(CORNER_DOWN_RIGHT_POSITION);
         assertEquals(MINE_COUNT, minesCountFromPosition);
     }

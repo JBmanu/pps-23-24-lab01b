@@ -1,7 +1,6 @@
 package e2;
 
 import e1.piece.position.Position;
-import e1.piece.position.SimplePosition;
 import e2.grid.Grid;
 import e2.grid.GridImpl;
 
@@ -10,7 +9,6 @@ public class LogicsImpl implements Logics {
 
     public LogicsImpl(final int size) {
         this.grid = new GridImpl(size);
-        this.grid.skillsLikeMineOf(new SimplePosition(0, 0));
     }
 
     @Override

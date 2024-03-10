@@ -35,6 +35,7 @@ public class LogicsTest {
 
     @Test
     public void minesCountFromPosition() {
+        this.logics.setMinesAroundOf(FREE_POSITION);
         assertEquals(ONE_MINE, this.logics.minesCountOf(FREE_POSITION));
     }
 
