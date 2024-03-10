@@ -1,14 +1,16 @@
 package e2;
 
 import e1.piece.position.Position;
-
-import java.util.List;
+import e1.piece.position.SimplePosition;
+import e2.grid.Grid;
+import e2.grid.GridImpl;
 
 public class LogicsImpl implements Logics {
-    final Position[][] grid;
+    final Grid grid;
 
     public LogicsImpl(final int size) {
-        this.grid = new Position[size][size];
+        this.grid = new GridImpl(size);
+        this.grid.setMine(new SimplePosition(0, 0));
     }
 
     @Override
@@ -22,12 +24,12 @@ public class LogicsImpl implements Logics {
     }
 
     @Override
-    public boolean isMine(final Position buttonPosition) {
-        return true;
+    public boolean isMine(final Position position) {
+        return this.grid.isMine(position);
     }
 
     @Override
-    public int minesCount(final Position buttonPosition) {
+    public int minesCount(final Position position) {
         return 0;
     }
 

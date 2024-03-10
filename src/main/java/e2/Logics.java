@@ -8,9 +8,9 @@ public interface Logics {
 
     boolean hasWin();
 
-    boolean isMine(final Position buttonPosition);
+    boolean isMine(final Position position);
 
-    int minesCount(final Position buttonPosition);
+    int minesCount(final Position position);
 
     void updateMinesCounter(final Position position);
 }
