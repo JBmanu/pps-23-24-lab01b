@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="refactor: improv dependencies">
-      <change beforePath="$PROJECT_DIR$/src/main/java/e1/LogicsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e1/LogicsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e1/LogicTest.java" beforeDir="false" />
+    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: create interface logics">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,30 +227,34 @@
       <recent name="e1.piece.movement" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'e1'">
-    <configuration name="PieceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;e1.piece.PieceTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="e2.Main" />
+      <module name="pps-23-24-lab01b.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration name="e1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="e1.Main" />
+      <module name="pps-23-24-lab01b.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
     </configuration>
     <configuration name="PieceTest.testCreatePieceWithNullParameters" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -300,30 +304,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PieceTest.testReadMovementLogic" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;e1.piece.PieceTest.testReadMovementLogic&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="Tests in 'e1'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -350,11 +330,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.e1.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Tests in 'e1'" />
         <item itemvalue="Gradle.PieceTest.testCreatePieceWithNullParameters" />
         <item itemvalue="Gradle.PieceTest.testEqualsPosition" />
-        <item itemvalue="Gradle.PieceTest.testReadMovementLogic" />
-        <item itemvalue="Gradle.PieceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -393,31 +373,7 @@
       <workItem from="1709634869857" duration="4203000" />
       <workItem from="1709648005804" duration="49865000" />
       <workItem from="1709905651349" duration="2429000" />
-      <workItem from="1709908362784" duration="13293000" />
-    </task>
-    <task id="LOCAL-00117" summary="refactor: PawnMovement, SimpleGridChess">
-      <option name="closed" value="true" />
-      <created>1709818708324</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1709818708324</updated>
-    </task>
-    <task id="LOCAL-00118" summary="refactor: PositionTest">
-      <option name="closed" value="true" />
-      <created>1709819265247</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1709819265247</updated>
-    </task>
-    <task id="LOCAL-00119" summary="feat: green testSetPositionAndRead">
-      <option name="closed" value="true" />
-      <created>1709819659589</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1709819659589</updated>
+      <workItem from="1709908362784" duration="20660000" />
     </task>
     <task id="LOCAL-00120" summary="feat: green testSetNewPositionAndChangeNewPosition">
       <option name="closed" value="true" />
@@ -787,16 +743,37 @@
       <option name="project" value="LOCAL" />
       <updated>1710088404253</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="feat: add files in fork">
+      <option name="closed" value="true" />
+      <created>1710089073252</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1710089073252</updated>
+    </task>
+    <task id="LOCAL-00167" summary="feat: check all test">
+      <option name="closed" value="true" />
+      <created>1710089395689</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1710089395689</updated>
+    </task>
+    <task id="LOCAL-00168" summary="feat: create interface logics">
+      <option name="closed" value="true" />
+      <created>1710095805576</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1710095805576</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: testAddPieceInEmptyPosition" />
-    <MESSAGE value="feat: add IdPiece enum" />
-    <MESSAGE value="feat: green testFindFirstPiece" />
     <MESSAGE value="feat: green testNotFindFirstPiece" />
     <MESSAGE value="refactor: improv StaticFactoryPiece, finish es 1" />
     <MESSAGE value="refactor: clean up space" />
@@ -819,7 +796,10 @@
     <MESSAGE value="refactor: LogicsImpl" />
     <MESSAGE value="refactor: movement" />
     <MESSAGE value="refactor: improv dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: improv dependencies" />
+    <MESSAGE value="feat: add files in fork" />
+    <MESSAGE value="feat: check all test" />
+    <MESSAGE value="feat: create interface logics" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create interface logics" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
