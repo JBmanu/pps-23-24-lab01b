@@ -9,11 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: green loseGame">
-      <change beforePath="$PROJECT_DIR$/src/main/java/e2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/GUI.java" afterDir="false" />
+    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: green minesCountInCornerUpLeftPosition">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/Logics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/Logics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/GridTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/grid/GridTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +33,22 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pps-23-24-lab01b" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="pps-23-24-lab01b" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -96,6 +113,11 @@
     "Gradle.GridChessTest.testUpdatePiecePositionOfId.executor": "Run",
     "Gradle.GridTest.canCreateGrid.executor": "Run",
     "Gradle.GridTest.checkMinePosition.executor": "Run",
+    "Gradle.GridTest.executor": "Run",
+    "Gradle.GridTest.minesCountFromPosition.executor": "Run",
+    "Gradle.GridTest.minesCountInCornerDownRightPosition.executor": "Run",
+    "Gradle.GridTest.minesCountInCornerUpLeftPosition.executor": "Debug",
+    "Gradle.GridTest.minesCountInPositionCorner.executor": "Run",
     "Gradle.GridTest.setMineInPosition.executor": "Run",
     "Gradle.KnightMovementTest.canCreateKnightMovement.executor": "Run",
     "Gradle.KnightMovementTest.executor": "Run",
@@ -115,6 +137,7 @@
     "Gradle.LogicTest.testKnightOverlayPawn.executor": "Run",
     "Gradle.LogicsTest.executor": "Run",
     "Gradle.LogicsTest.loseGame.executor": "Run",
+    "Gradle.LogicsTest.minesCountFromPosition.executor": "Run",
     "Gradle.LogicsTest.testArePresentKnightAndPawn.executor": "Run",
     "Gradle.LogicsTest.testBoundWhenSetKnightUpLeftCornerAndMoveDirectionLeft.executor": "Run",
     "Gradle.LogicsTest.testCanKnightAndPawnSetPosition.executor": "Debug",
@@ -209,7 +232,6 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "extract.method.default.visibility": "private",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -244,22 +266,8 @@
       <recent name="e2.grid" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="e2.Main" />
-      <module name="pps-23-24-lab01b.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="e2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration name="GridTest.canCreateGrid" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.GridTest.minesCountFromPosition">
+    <configuration name="GridTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -272,7 +280,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e2.grid.GridTest.canCreateGrid&quot;" />
+            <option value="&quot;e2.grid.GridTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -283,7 +291,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GridTest.checkMinePosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GridTest.minesCountFromPosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -296,7 +304,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e2.grid.GridTest.checkMinePosition&quot;" />
+            <option value="&quot;e2.grid.GridTest.minesCountFromPosition&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -307,7 +315,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GridTest.setMineInPosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GridTest.minesCountInCornerDownRightPosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -320,7 +328,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e2.grid.GridTest.setMineInPosition&quot;" />
+            <option value="&quot;e2.grid.GridTest.minesCountInCornerDownRightPosition&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -331,7 +339,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LogicsTest.loseGame" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GridTest.minesCountInCornerUpLeftPosition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -344,7 +352,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e2.LogicsTest.loseGame&quot;" />
+            <option value="&quot;e2.grid.GridTest.minesCountInCornerUpLeftPosition&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GridTest.minesCountInPositionCorner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e2.grid.GridTest.minesCountInPositionCorner&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -357,11 +389,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LogicsTest.loseGame" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.GridTest.checkMinePosition" />
-        <item itemvalue="Gradle.GridTest.setMineInPosition" />
-        <item itemvalue="Gradle.GridTest.canCreateGrid" />
+        <item itemvalue="Gradle.GridTest.minesCountFromPosition" />
+        <item itemvalue="Gradle.GridTest.minesCountInCornerUpLeftPosition" />
+        <item itemvalue="Gradle.GridTest.minesCountInCornerDownRightPosition" />
+        <item itemvalue="Gradle.GridTest" />
+        <item itemvalue="Gradle.GridTest.minesCountInPositionCorner" />
       </list>
     </recent_temporary>
   </component>
@@ -400,23 +432,8 @@
       <workItem from="1709634869857" duration="4203000" />
       <workItem from="1709648005804" duration="49865000" />
       <workItem from="1709905651349" duration="2429000" />
-      <workItem from="1709908362784" duration="24990000" />
-    </task>
-    <task id="LOCAL-00133" summary="refactor: testAddPieceInEmptyPosition">
-      <option name="closed" value="true" />
-      <created>1709830071746</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1709830071746</updated>
-    </task>
-    <task id="LOCAL-00134" summary="feat: add IdPiece enum">
-      <option name="closed" value="true" />
-      <created>1709830601104</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1709830601104</updated>
+      <workItem from="1709908362784" duration="28250000" />
+      <workItem from="1710104578974" duration="10000" />
     </task>
     <task id="LOCAL-00135" summary="feat: add IdPiece enum">
       <option name="closed" value="true" />
@@ -794,15 +811,29 @@
       <option name="project" value="LOCAL" />
       <updated>1710101183382</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="feat: green minesCountFromPosition">
+      <option name="closed" value="true" />
+      <created>1710102181869</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1710102181869</updated>
+    </task>
+    <task id="LOCAL-00183" summary="feat: green minesCountInCornerUpLeftPosition">
+      <option name="closed" value="true" />
+      <created>1710102661241</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1710102661241</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: LogicsImpl with StaticFactoryPiece" />
-    <MESSAGE value="fix: error in constructor LogicsImpl" />
     <MESSAGE value="feat: green canCreateStaticFactoryGridChess" />
     <MESSAGE value="feat: green testCanCreateGridWithKnightAndIdlePawn" />
     <MESSAGE value="feat: green testCanCreateGridWithKnightAndIdlePawnWithPositions" />
@@ -826,7 +857,20 @@
     <MESSAGE value="feat: green checkMinePosition" />
     <MESSAGE value="refactor: LogicsImpl" />
     <MESSAGE value="feat: green loseGame" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: green loseGame" />
+    <MESSAGE value="feat: green minesCountFromPosition" />
+    <MESSAGE value="feat: green minesCountInCornerUpLeftPosition" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: green minesCountInCornerUpLeftPosition" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
