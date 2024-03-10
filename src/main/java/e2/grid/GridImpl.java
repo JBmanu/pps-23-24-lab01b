@@ -46,12 +46,14 @@ public class GridImpl implements Grid {
 
         for (int row = startCell; row < endCell; row++) {
             for (int colum = startCell; colum < endCell; colum++) {
-                cells.add(this.grid[row][colum]);
+                if (row >= 0 && colum >= 0) {
+                    cells.add(this.grid[row][colum]);
+                }
             }
         }
 
 
         cells.remove(this.grid[x][y]);
-        return (int)cells.stream().filter(Cell::isMine).count();
+        return (int) cells.stream().filter(Cell::isMine).count();
     }
 }
