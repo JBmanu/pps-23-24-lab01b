@@ -7,14 +7,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class CellTest {
+public class FreeCellTest {
 
     public static final Position POSITION = new SimplePosition(0, 0);
     private Cell cell;
 
     @BeforeEach
     public void canCreateCell() {
-        this.cell = new CellImpl(POSITION);
+        this.cell = new FreeCell(POSITION);
     }
 
     @Test

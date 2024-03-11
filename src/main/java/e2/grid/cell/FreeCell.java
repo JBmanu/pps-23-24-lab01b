@@ -2,13 +2,13 @@ package e2.grid.cell;
 
 import e1.piece.position.Position;
 
-public class CellImpl implements Cell {
+public class FreeCell implements Cell {
     private final Position position;
     private int countMines;
     private boolean isShowCell;
     boolean isMine;
 
-    public CellImpl(final Position position) {
+    public FreeCell(final Position position) {
         this.position = position;
         this.isMine = false;
         this.countMines = 0;
@@ -49,6 +49,11 @@ public class CellImpl implements Cell {
     @Override
     public boolean equalsPosition(final Position position) {
         return this.position.equals(position);
+    }
+
+    @Override
+    public Position position() {
+        return this.position;
     }
 
 }
