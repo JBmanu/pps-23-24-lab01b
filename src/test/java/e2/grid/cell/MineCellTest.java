@@ -5,6 +5,7 @@ import e1.piece.position.SimplePosition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MineCellTest {
@@ -20,5 +21,12 @@ public class MineCellTest {
     @Test
     public void isMine() {
         assertTrue(this.mineCell.isMine());
+    }
+
+    @Test
+    public void testShowCell() {
+        assertFalse(this.mineCell.isShowCell());
+        this.mineCell.showCell();
+        assertTrue(this.mineCell.isShowCell());
     }
 }

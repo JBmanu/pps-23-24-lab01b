@@ -3,8 +3,10 @@ package e2.grid.cell;
 import e1.piece.position.Position;
 
 public class MineCell implements Cell {
+    private boolean isShow;
 
     public MineCell(final Position position) {
+        this.isShow = false;
     }
 
     @Override
@@ -14,12 +16,12 @@ public class MineCell implements Cell {
 
     @Override
     public void showCell() {
-
+        this.isShow = true;
     }
 
     @Override
     public boolean isShowCell() {
-        return false;
+        return this.isShow;
     }
 
     @Override
