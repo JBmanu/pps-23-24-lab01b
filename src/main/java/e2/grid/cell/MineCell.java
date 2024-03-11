@@ -9,7 +9,7 @@ public class MineCell implements Cell {
 
     @Override
     public boolean isMine() {
-        return false;
+        return true;
     }
 
     @Override
