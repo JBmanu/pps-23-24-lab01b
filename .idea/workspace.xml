@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: green testHardGrid">
+    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="refactor: GridTest">
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/factory/StaticFactoryGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/factory/StaticFactoryGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/GridTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/grid/GridTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/factory/GridDifficultlyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/grid/factory/GridDifficultlyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +127,8 @@
     "Gradle.GridTest.minesCountInPositionCorner.executor": "Run",
     "Gradle.GridTest.setMineInPosition.executor": "Run",
     "Gradle.GridTest.showCell.executor": "Run",
+    "Gradle.GridTest.testAutoExpandWhenHasMine.executor": "Run",
+    "Gradle.GridTest.testAutoExpandWhenShowCellWithZeroMine.executor": "Run",
     "Gradle.GridTest.testAutoExpanse.executor": "Run",
     "Gradle.GridTest.winGame.executor": "Run",
     "Gradle.KnightMovementTest.canCreateKnightMovement.executor": "Run",
@@ -301,7 +300,7 @@
       <recent name="e2.grid" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GridTest.minesCountInCornerUpLeftPosition">
+  <component name="RunManager" selected="Gradle.GridTest">
     <configuration name="GridTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -350,6 +349,54 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="GridTest.testAutoExpandWhenHasMine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e2.grid.GridTest.testAutoExpandWhenHasMine&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GridTest.testAutoExpandWhenShowCellWithZeroMine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e2.grid.GridTest.testAutoExpandWhenShowCellWithZeroMine&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="GridTest.testAutoExpanse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -374,61 +421,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="StaticFactoryGridTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;e2.grid.factory.StaticFactoryGridTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="StaticFactoryGridTest.testHardGrid" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;e2.grid.factory.StaticFactoryGridTest.testHardGrid&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GridTest.minesCountInCornerUpLeftPosition" />
         <item itemvalue="Gradle.GridTest" />
+        <item itemvalue="Gradle.GridTest.testAutoExpandWhenShowCellWithZeroMine" />
+        <item itemvalue="Gradle.GridTest.testAutoExpandWhenHasMine" />
         <item itemvalue="Gradle.GridTest.testAutoExpanse" />
-        <item itemvalue="Gradle.StaticFactoryGridTest" />
-        <item itemvalue="Gradle.StaticFactoryGridTest.testHardGrid" />
+        <item itemvalue="Gradle.GridTest.minesCountInCornerUpLeftPosition" />
       </list>
     </recent_temporary>
   </component>
@@ -482,39 +481,7 @@
       <workItem from="1710168098764" duration="280000" />
       <workItem from="1710171743134" duration="126000" />
       <workItem from="1710171876104" duration="91000" />
-      <workItem from="1710172099610" duration="7087000" />
-    </task>
-    <task id="LOCAL-00166" summary="feat: add files in fork">
-      <option name="closed" value="true" />
-      <created>1710089073252</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1710089073252</updated>
-    </task>
-    <task id="LOCAL-00167" summary="feat: check all test">
-      <option name="closed" value="true" />
-      <created>1710089395689</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1710089395689</updated>
-    </task>
-    <task id="LOCAL-00168" summary="feat: create interface logics">
-      <option name="closed" value="true" />
-      <created>1710095805576</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1710095805576</updated>
-    </task>
-    <task id="LOCAL-00169" summary="feat: create interface logics">
-      <option name="closed" value="true" />
-      <created>1710097365226</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1710097365226</updated>
+      <workItem from="1710172099610" duration="10030000" />
     </task>
     <task id="LOCAL-00170" summary="feat: create interface logics">
       <option name="closed" value="true" />
@@ -876,16 +843,45 @@
       <option name="project" value="LOCAL" />
       <updated>1710179416280</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="feat: green testAutoExpanse">
+      <option name="closed" value="true" />
+      <created>1710184631515</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1710184631515</updated>
+    </task>
+    <task id="LOCAL-00216" summary="feat: green testAutoExpandWhenHasMine">
+      <option name="closed" value="true" />
+      <created>1710185454233</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1710185454233</updated>
+    </task>
+    <task id="LOCAL-00217" summary="feat: green testAutoExpandWhenHasMine">
+      <option name="closed" value="true" />
+      <created>1710185921441</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1710185921441</updated>
+    </task>
+    <task id="LOCAL-00218" summary="refactor: GridTest">
+      <option name="closed" value="true" />
+      <created>1710186010648</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1710186010648</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: green minesCountFromPosition" />
-    <MESSAGE value="refactor: rename Grid fun" />
-    <MESSAGE value="feat: green haveBeenComputeMinesOfPosition" />
     <MESSAGE value="feat: green setMineAroundOfPosition" />
     <MESSAGE value="feat: green setMinesAround" />
     <MESSAGE value="refactor: setMinesAroundOf" />
@@ -908,7 +904,10 @@
     <MESSAGE value="feat: green testEasyGrid" />
     <MESSAGE value="feat: green testMediumGrid" />
     <MESSAGE value="feat: green testHardGrid" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: green testHardGrid" />
+    <MESSAGE value="feat: green testAutoExpanse" />
+    <MESSAGE value="feat: green testAutoExpandWhenHasMine" />
+    <MESSAGE value="refactor: GridTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: GridTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class GridImpl implements Grid {
     public static final int CONDITION_WINNER = 0;
@@ -83,23 +84,36 @@ public class GridImpl implements Grid {
                 .toList();
     }
 
+    private Stream<Position> positionAroundCellAreNotMinesAndNotShow(final Position position) {
+        return this.cellsAroundIn(position).stream()
+                .filter(cell -> !cell.isMine())
+                .filter(cell -> !cell.isShowCell())
+                .map(Cell::position);
+    }
+
+    private void showAroundCellWithZeroMines(final Position position) {
+        this.positionAroundCellAreNotMinesAndNotShow(position)
+                .filter(pos -> this.countMinesIn(pos) == ZERO_MINES)
+                .forEach(this::showCell);
+    }
+
+    private void showPositionAroundWithMinesAround(final Position position) {
+        this.positionAroundCellAreNotMinesAndNotShow(position)
+                .filter(pos -> this.countMinesIn(pos) > ZERO_MINES)
+                .forEach(this::showCell);
+    }
+
     @Override
     public void showCell(final Position position) {
         final Optional<Cell> optionalCell = this.cellOf(position);
         optionalCell.ifPresent(Cell::showCell);
-        final int countMines = this.countMinesIn(position);
 
-        if (countMines > 0) return;
-        final List<Cell> cellsAround = this.cellsAroundIn(position);
-        cellsAround.stream()
-                .filter(cell -> !cell.isMine() && !cell.isShowCell())
-                .map(Cell::position)
-                .filter(pos -> {
-                    final int mines = this.countMinesIn(pos);
-                    if (mines > ZERO_MINES) this.showCell(pos);
-                    return countMines == ZERO_MINES;
-                })
-                .forEach(this::showCell);
+        if (this.countMinesIn(position) > ZERO_MINES) {
+            return;
+        }
+
+        this.showPositionAroundWithMinesAround(position);
+        this.showAroundCellWithZeroMines(position);
     }
 
     @Override
@@ -162,6 +176,4 @@ public class GridImpl implements Grid {
                 .filter(Cell::isMine)
                 .count();
     }
-
-
 }
