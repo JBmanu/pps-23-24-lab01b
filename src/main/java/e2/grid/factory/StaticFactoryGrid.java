@@ -7,7 +7,9 @@ import e2.grid.GridImpl;
 
 public final class StaticFactoryGrid {
 
-    public static final int PERCENTAGE_OF_MINES = 20;
+    public static final int EASY_PERCENTAGE_OF_MINES = 20;
+    public static final int MEDIUM_PERCENTAGE_OF_MINES = 30;
+    public static final int HARD_PERCENTAGE_OF_MINES = 40;
 
     private StaticFactoryGrid() { }
 
@@ -21,7 +23,14 @@ public final class StaticFactoryGrid {
     public static Grid createEasyGrid(final int size) {
         final Grid grid = new GridImpl(size);
         final GridDifficulty difficulty = new GridDifficultlyImpl();
-        difficulty.initializationMines(PERCENTAGE_OF_MINES, grid);
+        difficulty.initializationMines(EASY_PERCENTAGE_OF_MINES, grid);
+        return grid;
+    }
+
+    public static Grid createMediumGrid(final int size) {
+        final Grid grid = new GridImpl(size);
+        final GridDifficulty difficulty = new GridDifficultlyImpl();
+        difficulty.initializationMines(MEDIUM_PERCENTAGE_OF_MINES, grid);
         return grid;
     }
 }
