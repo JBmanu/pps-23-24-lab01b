@@ -21,7 +21,7 @@ public class GridDifficultlyTest {
     @Test
     public void initializationMines() {
         final int size = 4;
-        this.grid = new GridImpl(size);
+        this.grid = StaticFactoryGrid.emptyMines(size);
         this.difficulty.initializationMines(PERCENTAGES_OF_MINES, this.grid);
         final int minesTotal = size * size % PERCENTAGES_OF_MINES;
         assertEquals(minesTotal, this.grid.totalMines());

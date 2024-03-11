@@ -56,25 +56,8 @@ public class GridImpl implements Grid {
     }
 
     private int computeCountMinesIn(final Position position) {
-        final int y = position.y();
-        final int x = position.x();
-        final int startXCell = x - 1;
-        final int endXCell = x + 1;
-        final int startYCell = y - 1;
-        final int endYCell = y + 1;
-
-        final long minesAround = IntStream.rangeClosed(startXCell, endXCell)
-                .boxed()
-                .flatMap(row -> IntStream.rangeClosed(startYCell, endYCell)
-                        .boxed()
-                        .filter(colum -> this.checkBounds(row, colum))
-                        .map(colum -> new SimplePosition(row, colum))
-                        .map(this::cellOf)
-                        .filter(Optional::isPresent)
-                        .map(Optional::get))
-                .filter(Cell::isMine)
-                .count();
-        return (int) minesAround;
+        final List<Cell> cellsAround = this.cellsAroundIn(position);
+        return (int) cellsAround.stream().filter(Cell::isMine).count();
     }
 
     @Override
@@ -82,11 +65,39 @@ public class GridImpl implements Grid {
         return this.computeCountMinesIn(position);
     }
 
-    @Override
-    public void showCell(final Position position) {
-        this.cellOf(position).ifPresent(Cell::showCell);
+    private List<Cell> cellsAroundIn(final Position position) {
+        final int y = position.y();
+        final int x = position.x();
+        final int startXCell = x - 1;
+        final int endXCell = x + 1;
+        final int startYCell = y - 1;
+        final int endYCell = y + 1;
+
+        return IntStream.rangeClosed(startXCell, endXCell)
+                .boxed()
+                .flatMap(row -> IntStream.rangeClosed(startYCell, endYCell)
+                        .boxed()
+                        .filter(colum -> this.checkBounds(row, colum))
+                        .filter(colum -> row != x || colum != y)
+                        .map(colum -> new SimplePosition(row, colum))
+                        .map(this::cellOf)
+                        .filter(Optional::isPresent)
+                        .map(Optional::get))
+                .toList();
     }
 
+    @Override
+    public void showCell(final Position position) {
+        final Optional<Cell> optionalCell = this.cellOf(position);
+        optionalCell.ifPresent(Cell::showCell);
+        final List<Cell> cellsAround = this.cellsAroundIn(position);
+
+        cellsAround.stream()
+                .filter(cell -> !cell.isMine() && !cell.isShowCell())
+                .map(Cell::position)
+                .filter(pos -> this.computeCountMinesIn(pos) == 0)
+                .forEach(this::showCell);
+    }
 
     @Override
     public boolean isShowCell(final Position position) {

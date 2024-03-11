@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class GridTest {
     public static final int SIZE = 7;
     public static final int ONE_MINE = 1;
-    public static final int TWO_MINES = 2;
     public static final Position MINE_POSITION = new SimplePosition(2, 1);
     public static final Position FREE_POSITION = new SimplePosition(2, 2);
     public static final Position CORNER_UP_LEFT_POSITION = new SimplePosition(0, 0);
@@ -49,7 +48,7 @@ public class GridTest {
         final Position minePositionNearCornerUpLeft = new SimplePosition(0, 1);
         this.grid.setMineIn(minePositionNearCornerUpLeft);
         final int minesCountFromPosition = this.grid.countMinesIn(CORNER_UP_LEFT_POSITION);
-        assertEquals(TWO_MINES, minesCountFromPosition);
+        assertEquals(ONE_MINE, minesCountFromPosition);
     }
 
     @Test
@@ -76,6 +75,13 @@ public class GridTest {
                 this.grid.showCell(new SimplePosition(row, colum));
             }
         }
+        assertTrue(this.grid.hasWin(FREE_POSITION));
+    }
+
+    @Test
+    public void testAutoExpanse() {
+        this.grid = StaticFactoryGrid.emptyMines(SIZE);
+        this.showCell();
         assertTrue(this.grid.hasWin(FREE_POSITION));
     }
 

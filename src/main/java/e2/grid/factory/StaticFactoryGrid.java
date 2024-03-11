@@ -14,6 +14,10 @@ public final class StaticFactoryGrid {
     private StaticFactoryGrid() {
     }
 
+    public static Grid emptyMines(final int size) {
+        return new GridImpl(size);
+    }
+
     public static Grid createOneMineInUpLeftCorner(final int size) {
         final Position position = new SimplePosition(0, 0);
         final Grid grid = new GridImpl(size);
@@ -39,4 +43,6 @@ public final class StaticFactoryGrid {
     public static Grid createHardGrid(final int size) {
         return gridOfDifficulty(size, HARD_PERCENTAGE_OF_MINES);
     }
+
+
 }
