@@ -4,36 +4,16 @@ import e1.piece.position.Position;
 
 public class FreeCell implements Cell {
     private final Position position;
-    private int countMines;
     private boolean isShowCell;
-    boolean isMine;
 
     public FreeCell(final Position position) {
         this.position = position;
-        this.isMine = false;
-        this.countMines = 0;
         this.isShowCell = false;
-    }
-
-
-    @Override
-    public void skillsLikeMine() {
-        this.isMine = true;
     }
 
     @Override
     public boolean isMine() {
-        return this.isMine;
-    }
-
-    @Override
-    public void setMinesAround(final int mines) {
-        this.countMines = mines;
-    }
-
-    @Override
-    public int minesAround() {
-        return this.countMines;
+        return false;
     }
 
     @Override
