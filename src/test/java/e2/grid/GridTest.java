@@ -99,4 +99,5 @@ public class GridTest {
         final int totalShowCell = SIZE * SIZE - ONE_MINE;
         assertEquals(totalShowCell, this.grid.totalShowCells());
     }
+
 }

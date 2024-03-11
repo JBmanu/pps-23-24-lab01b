@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class GridDifficultlyTest {
 
     public static final int PERCENTAGES_OF_MINES = 20;
+    public static final int CENT = 100;
     private GridDifficulty difficulty;
     private Grid grid;
 
@@ -23,7 +24,7 @@ public class GridDifficultlyTest {
         final int size = 4;
         this.grid = StaticFactoryGrid.emptyMines(size);
         this.difficulty.initializationMines(PERCENTAGES_OF_MINES, this.grid);
-        final int minesTotal = size * size % PERCENTAGES_OF_MINES;
+        final int minesTotal = (size * size) * PERCENTAGES_OF_MINES / CENT;
         assertEquals(minesTotal, this.grid.totalMines());
     }
 
