@@ -81,10 +81,16 @@ public class GridTest {
     @Test
     public void testAutoExpanse() {
         this.grid = StaticFactoryGrid.emptyMines(SIZE);
-        this.showCell();
+        this.grid.showCell(FREE_POSITION);
         assertTrue(this.grid.hasWin(FREE_POSITION));
     }
 
-
+    @Test
+    public void testAutoExpandWhenHasMine() {
+        final Position position = new SimplePosition(0, 1);
+        this.grid.showCell(position);
+        final boolean isShowOneCell = this.grid.totalShowCells() == 1;
+        assertTrue(isShowOneCell);
+    }
 
 }

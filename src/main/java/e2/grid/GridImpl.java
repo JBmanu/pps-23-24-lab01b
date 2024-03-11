@@ -15,6 +15,7 @@ import java.util.stream.IntStream;
 public class GridImpl implements Grid {
     public static final int CONDITION_WINNER = 0;
     public static final int MIN_BOUND = 0;
+    public static final int ZERO_MINES = 0;
     private final List<Cell> cells;
     private final int size;
 
@@ -55,14 +56,10 @@ public class GridImpl implements Grid {
         return row >= MIN_BOUND && colum >= MIN_BOUND && row < this.size && colum < this.size;
     }
 
-    private int computeCountMinesIn(final Position position) {
-        final List<Cell> cellsAround = this.cellsAroundIn(position);
-        return (int) cellsAround.stream().filter(Cell::isMine).count();
-    }
-
     @Override
     public int countMinesIn(final Position position) {
-        return this.computeCountMinesIn(position);
+        final List<Cell> cellsAround = this.cellsAroundIn(position);
+        return (int) cellsAround.stream().filter(Cell::isMine).count();
     }
 
     private List<Cell> cellsAroundIn(final Position position) {
@@ -90,12 +87,14 @@ public class GridImpl implements Grid {
     public void showCell(final Position position) {
         final Optional<Cell> optionalCell = this.cellOf(position);
         optionalCell.ifPresent(Cell::showCell);
-        final List<Cell> cellsAround = this.cellsAroundIn(position);
+        final int countMines = this.countMinesIn(position);
 
+        if (countMines > 0) return;
+        final List<Cell> cellsAround = this.cellsAroundIn(position);
         cellsAround.stream()
                 .filter(cell -> !cell.isMine() && !cell.isShowCell())
                 .map(Cell::position)
-                .filter(pos -> this.computeCountMinesIn(pos) == 0)
+                .filter(pos -> this.countMinesIn(pos) == ZERO_MINES)
                 .forEach(this::showCell);
     }
 
@@ -127,6 +126,14 @@ public class GridImpl implements Grid {
     public int totalFreeCells() {
         return (int) this.cells.stream()
                 .filter(cell -> !cell.isMine())
+                .count();
+    }
+
+    @Override
+    public int totalShowCells() {
+        return (int) this.cells.stream()
+                .filter(cell -> !cell.isMine())
+                .filter(Cell::isShowCell)
                 .count();
     }
 

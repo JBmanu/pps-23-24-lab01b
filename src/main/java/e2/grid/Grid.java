@@ -27,4 +27,6 @@ public interface Grid {
     List<Position> freeCellsPositions();
 
     int totalFreeCells();
+
+    int totalShowCells();
 }
