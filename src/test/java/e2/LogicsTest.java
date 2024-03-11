@@ -35,14 +35,14 @@ public class LogicsTest {
 
     @Test
     public void minesCountFromPosition() {
-        this.logics.setMinesAroundOf(FREE_POSITION);
+        this.logics.showCell(FREE_POSITION);
         assertEquals(ONE_MINE, this.logics.minesCountOf(FREE_POSITION));
     }
 
     @Test
     public void setMineAroundOfPosition() {
-        this.logics.setMinesAroundOf(FREE_POSITION);
-        assertTrue(this.logics.haveBeenComputeMinesOf(FREE_POSITION));
+        this.logics.showCell(FREE_POSITION);
+        assertTrue(this.logics.isShowCell(FREE_POSITION));
     }
 
     @Test
@@ -50,7 +50,7 @@ public class LogicsTest {
         final int startOfFor = 0;
         for (int row = startOfFor; row < SIZE; row++) {
             for (int colum = startOfFor; colum < SIZE; colum++) {
-                this.logics.setMinesAroundOf(new SimplePosition(row, colum));
+                this.logics.showCell(new SimplePosition(row, colum));
             }
         }
         assertTrue(this.logics.hasWin());

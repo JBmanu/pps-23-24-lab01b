@@ -2,13 +2,13 @@ package e2;
 
 import e1.piece.position.Position;
 import e2.grid.Grid;
-import e2.grid.GridImpl;
+import e2.grid.factory.StaticFactoryGrid;
 
 public class LogicsImpl implements Logics {
     final Grid grid;
 
     public LogicsImpl(final int size) {
-        this.grid = new GridImpl(size);
+        this.grid = StaticFactoryGrid.createOneMineInUpLeftCorner(size);
     }
 
     @Override
@@ -28,16 +28,16 @@ public class LogicsImpl implements Logics {
 
     @Override
     public int minesCountOf(final Position position) {
-        return this.grid.minesCountOf(position);
+        return this.grid.countMinesIn(position);
     }
 
     @Override
-    public void setMinesAroundOf(final Position position) {
-        this.grid.setMinesAroundOf(position);
+    public void showCell(final Position position) {
+        this.grid.showCell(position);
     }
 
     @Override
-    public boolean haveBeenComputeMinesOf(final Position position) {
-        return this.grid.haveBeenComputeMinesOf(position);
+    public boolean isShowCell(final Position position) {
+        return this.grid.isShowCell(position);
     }
 }

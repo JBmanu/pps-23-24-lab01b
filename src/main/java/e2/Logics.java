@@ -12,7 +12,7 @@ public interface Logics {
 
     int minesCountOf(final Position position);
 
-    void setMinesAroundOf(final Position position);
+    void showCell(final Position position);
 
-    boolean haveBeenComputeMinesOf(final Position position);
+    boolean isShowCell(final Position position);
 }
