@@ -8,7 +8,7 @@ public class LogicsImpl implements Logics {
     final Grid grid;
 
     public LogicsImpl(final int size) {
-        this.grid = StaticFactoryGrid.createOneMineInUpLeftCorner(size);
+        this.grid = StaticFactoryGrid.createMediumGrid(size);
     }
 
     @Override
