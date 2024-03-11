@@ -11,7 +11,8 @@ public final class StaticFactoryGrid {
     public static final int MEDIUM_PERCENTAGE_OF_MINES = 30;
     public static final int HARD_PERCENTAGE_OF_MINES = 40;
 
-    private StaticFactoryGrid() { }
+    private StaticFactoryGrid() {
+    }
 
     public static Grid createOneMineInUpLeftCorner(final int size) {
         final Position position = new SimplePosition(0, 0);
@@ -20,17 +21,22 @@ public final class StaticFactoryGrid {
         return grid;
     }
 
-    public static Grid createEasyGrid(final int size) {
+    private static Grid gridOfDifficulty(final int size, final int percentageOfMines) {
         final Grid grid = new GridImpl(size);
         final GridDifficulty difficulty = new GridDifficultlyImpl();
-        difficulty.initializationMines(EASY_PERCENTAGE_OF_MINES, grid);
+        difficulty.initializationMines(percentageOfMines, grid);
         return grid;
     }
 
+    public static Grid createEasyGrid(final int size) {
+        return gridOfDifficulty(size, EASY_PERCENTAGE_OF_MINES);
+    }
+
     public static Grid createMediumGrid(final int size) {
-        final Grid grid = new GridImpl(size);
-        final GridDifficulty difficulty = new GridDifficultlyImpl();
-        difficulty.initializationMines(MEDIUM_PERCENTAGE_OF_MINES, grid);
-        return grid;
+        return gridOfDifficulty(size, MEDIUM_PERCENTAGE_OF_MINES);
+    }
+
+    public static Grid createHardGrid(final int size) {
+        return gridOfDifficulty(size, HARD_PERCENTAGE_OF_MINES);
     }
 }

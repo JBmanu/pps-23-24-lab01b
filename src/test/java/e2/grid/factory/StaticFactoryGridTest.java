@@ -39,4 +39,11 @@ public class StaticFactoryGridTest {
         final int totalMines = SIZE * SIZE % StaticFactoryGrid.MEDIUM_PERCENTAGE_OF_MINES;
         assertEquals(totalMines, grid.totalMines());
     }
+
+    @Test
+    public void testHardGrid() {
+        final Grid grid = StaticFactoryGrid.createHardGrid(SIZE);
+        final int totalMines = SIZE * SIZE % StaticFactoryGrid.HARD_PERCENTAGE_OF_MINES;
+        assertEquals(totalMines, grid.totalMines());
+    }
 }
