@@ -89,8 +89,14 @@ public class GridTest {
     public void testAutoExpandWhenHasMine() {
         final Position position = new SimplePosition(0, 1);
         this.grid.showCell(position);
-        final boolean isShowOneCell = this.grid.totalShowCells() == 1;
+        final boolean isShowOneCell = this.grid.totalShowCells() == ONE_MINE;
         assertTrue(isShowOneCell);
     }
 
+    @Test
+    public void testAutoExpandWhenShowCellWithZeroMine() {
+        this.grid.showCell(FREE_POSITION);
+        final int totalShowCell = SIZE * SIZE - ONE_MINE;
+        assertEquals(totalShowCell, this.grid.totalShowCells());
+    }
 }

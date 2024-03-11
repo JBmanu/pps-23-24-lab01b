@@ -94,7 +94,11 @@ public class GridImpl implements Grid {
         cellsAround.stream()
                 .filter(cell -> !cell.isMine() && !cell.isShowCell())
                 .map(Cell::position)
-                .filter(pos -> this.countMinesIn(pos) == ZERO_MINES)
+                .filter(pos -> {
+                    final int mines = this.countMinesIn(pos);
+                    if (mines > ZERO_MINES) this.showCell(pos);
+                    return countMines == ZERO_MINES;
+                })
                 .forEach(this::showCell);
     }
 
