@@ -10,7 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class StaticFactoryGridTest {
 
-    public static final int SIZE = 5;
+    public static final int SIZE = 4;
+    public static final int ONE_MINE = 1;
 
     @Test
     public void canCreateFactory() {
@@ -22,6 +23,14 @@ public class StaticFactoryGridTest {
         final Grid grid = StaticFactoryGrid.createOneMineInUpLeftCorner(SIZE);
         final Position position = new SimplePosition(0, 0);
         assertTrue(grid.isMine(position));
-        assertEquals(1, grid.totalMines());
+        assertEquals(ONE_MINE, grid.totalMines());
+    }
+
+    @Test
+    public void testEasyGrid() {
+        final Grid grid = StaticFactoryGrid.createEasyGrid(SIZE);
+        final int percentagesOfMine = 20;
+        final int totalMines = SIZE * SIZE % percentagesOfMine;
+        assertEquals(totalMines, grid.totalMines());
     }
 }

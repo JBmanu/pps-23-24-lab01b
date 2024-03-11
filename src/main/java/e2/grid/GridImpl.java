@@ -101,7 +101,6 @@ public class GridImpl implements Grid {
                 .filter(cell -> !cell.isMine())
                 .filter(cell -> !cell.isShowCell())
                 .count();
-        System.out.println("CCCC " + remainingCellsOfMineCalculation);
         return remainingCellsOfMineCalculation == CONDITION_WINNER;
     }
 
@@ -111,6 +110,13 @@ public class GridImpl implements Grid {
                 .filter(cell -> !cell.isMine())
                 .map(Cell::position)
                 .toList();
+    }
+
+    @Override
+    public int totalFreeCells() {
+        return (int) this.cells.stream()
+                .filter(cell -> !cell.isMine())
+                .count();
     }
 
     @Override

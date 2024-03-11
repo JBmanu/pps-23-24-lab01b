@@ -9,16 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="test: game GUI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/e2/grid/factory/GridDifficultly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/e2/grid/factory/GridDifficulty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/e2/grid/factory/GridDifficultlyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: green initializationMines">
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/e2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/factory/StaticFactoryGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/factory/StaticFactoryGrid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/gridDifficulty/GridDifficulty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/gridDifficulty/EasyGridDifficultly.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/gridDifficulty/GridDifficultlyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/factory/StaticFactoryGridTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/grid/factory/StaticFactoryGridTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,11 +291,14 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="e1.piece.movement" />
     </key>
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="e2.grid.factory.StaticFactoryGrid" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="e2.grid" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.GridDifficultlyTest.initializationMines">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="e2.Main" />
       <module name="pps-23-24-lab01b.main" />
@@ -313,7 +313,7 @@
         <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration name="GridTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GridDifficultlyTest.initializationMines" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -326,7 +326,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e2.grid.GridTest&quot;" />
+            <option value="&quot;e2.grid.factory.GridDifficultlyTest.initializationMines&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -411,11 +411,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GridDifficultlyTest.initializationMines" />
         <item itemvalue="Gradle.GridTest.winGame" />
         <item itemvalue="Gradle.LogicsTest.winGame" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.LogicsTest" />
-        <item itemvalue="Gradle.GridTest" />
       </list>
     </recent_temporary>
   </component>
@@ -469,23 +469,7 @@
       <workItem from="1710168098764" duration="280000" />
       <workItem from="1710171743134" duration="126000" />
       <workItem from="1710171876104" duration="91000" />
-      <workItem from="1710172099610" duration="5518000" />
-    </task>
-    <task id="LOCAL-00160" summary="feat: green &#10;estUpdatePiecePositionOfIdInPositionOutGrid">
-      <option name="closed" value="true" />
-      <created>1709915172849</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1709915172849</updated>
-    </task>
-    <task id="LOCAL-00161" summary="refactor: LogicsImpl">
-      <option name="closed" value="true" />
-      <created>1709915384855</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1709915384855</updated>
+      <workItem from="1710172099610" duration="6119000" />
     </task>
     <task id="LOCAL-00162" summary="feat: green testPiecePositionFromId">
       <option name="closed" value="true" />
@@ -863,15 +847,29 @@
       <option name="project" value="LOCAL" />
       <updated>1710177755094</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="feat: add repaint for click button">
+      <option name="closed" value="true" />
+      <created>1710178550619</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1710178550619</updated>
+    </task>
+    <task id="LOCAL-00210" summary="feat: green initializationMines">
+      <option name="closed" value="true" />
+      <created>1710178926604</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1710178926605</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: green checkMinePosition" />
-    <MESSAGE value="refactor: LogicsImpl" />
     <MESSAGE value="feat: green loseGame" />
     <MESSAGE value="feat: green minesCountInCornerUpLeftPosition" />
     <MESSAGE value="feat: green minesCountInCornerDownRightPosition" />
@@ -895,7 +893,9 @@
     <MESSAGE value="refactor: grid" />
     <MESSAGE value="refactor: logics" />
     <MESSAGE value="test: game GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: game GUI" />
+    <MESSAGE value="feat: add repaint for click button" />
+    <MESSAGE value="feat: green initializationMines" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: green initializationMines" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

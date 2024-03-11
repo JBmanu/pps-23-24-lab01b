@@ -25,4 +25,6 @@ public interface Grid {
     int totalMines();
 
     List<Position> freeCellsPositions();
+
+    int totalFreeCells();
 }
