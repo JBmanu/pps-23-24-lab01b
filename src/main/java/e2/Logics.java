@@ -6,7 +6,7 @@ public interface Logics {
 
     boolean hasLose(final Position position);
 
-    boolean hasWin();
+    boolean hasWin(final Position position);
 
     boolean isMine(final Position position);
 

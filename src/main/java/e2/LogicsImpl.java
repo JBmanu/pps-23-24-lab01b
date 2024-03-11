@@ -17,8 +17,8 @@ public class LogicsImpl implements Logics {
     }
 
     @Override
-    public boolean hasWin() {
-        return this.grid.hasWin();
+    public boolean hasWin(final Position position) {
+        return this.grid.hasWin(position);
     }
 
     @Override

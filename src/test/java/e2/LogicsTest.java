@@ -53,7 +53,7 @@ public class LogicsTest {
                 this.logics.showCell(new SimplePosition(row, colum));
             }
         }
-        assertTrue(this.logics.hasWin());
+        assertTrue(this.logics.hasWin(FREE_POSITION));
     }
 
 }

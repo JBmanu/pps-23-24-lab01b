@@ -9,17 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="feat: green testMineInUpLeftCorner">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="refactor: logics">
       <change afterPath="$PROJECT_DIR$/src/main/java/e2/grid/factory/GridDifficultly.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/e2/grid/factory/GridDifficulty.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/e2/grid/factory/GridDifficultlyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/Logics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/Logics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/e2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/gridDifficulty/GridDifficulty.java" beforeDir="false" />
@@ -306,30 +304,20 @@
       <recent name="e2.grid" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GridTest">
-    <configuration name="FreeCellTest.isMine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;e2.grid.cell.FreeCellTest.isMine&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="e2.Main" />
+      <module name="pps-23-24-lab01b.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
     </configuration>
     <configuration name="GridTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -355,7 +343,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MineCellTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GridTest.winGame" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -368,7 +356,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e2.grid.cell.MineCellTest&quot;" />
+            <option value="&quot;e2.grid.GridTest.winGame&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -379,7 +367,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="StaticFactoryGridTest.testMineInUpLeftCorner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LogicsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -392,7 +380,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e2.grid.factory.StaticFactoryGridTest.testMineInUpLeftCorner&quot;" />
+            <option value="&quot;e2.LogicsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -403,7 +391,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="e2.grid.cell.MineCellTest and 1 more" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LogicsTest.winGame" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -415,8 +403,8 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests &quot;e2.grid.cell.MineCellTest&quot;" />
-            <option value="--tests &quot;e2.grid.cell.FreeCellTest&quot;" />
+            <option value="--tests" />
+            <option value="&quot;e2.LogicsTest.winGame&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -429,11 +417,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GridTest.winGame" />
+        <item itemvalue="Gradle.LogicsTest.winGame" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.LogicsTest" />
         <item itemvalue="Gradle.GridTest" />
-        <item itemvalue="Gradle.StaticFactoryGridTest.testMineInUpLeftCorner" />
-        <item itemvalue="Gradle.e2.grid.cell.MineCellTest and 1 more" />
-        <item itemvalue="Gradle.MineCellTest" />
-        <item itemvalue="Gradle.FreeCellTest.isMine" />
       </list>
     </recent_temporary>
   </component>
@@ -487,23 +475,7 @@
       <workItem from="1710168098764" duration="280000" />
       <workItem from="1710171743134" duration="126000" />
       <workItem from="1710171876104" duration="91000" />
-      <workItem from="1710172099610" duration="4092000" />
-    </task>
-    <task id="LOCAL-00157" summary="feat: add updatePositionOfPiece">
-      <option name="closed" value="true" />
-      <created>1709914612151</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1709914612151</updated>
-    </task>
-    <task id="LOCAL-00158" summary="refactor: LogicsImpl">
-      <option name="closed" value="true" />
-      <created>1709914713108</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1709914713108</updated>
+      <workItem from="1710172099610" duration="5066000" />
     </task>
     <task id="LOCAL-00159" summary="feat: green &#10;testUpdatePiecePositionOfId">
       <option name="closed" value="true" />
@@ -881,15 +853,29 @@
       <option name="project" value="LOCAL" />
       <updated>1710176442242</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="refactor: grid">
+      <option name="closed" value="true" />
+      <created>1710177207972</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1710177207972</updated>
+    </task>
+    <task id="LOCAL-00207" summary="refactor: logics">
+      <option name="closed" value="true" />
+      <created>1710177236548</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1710177236548</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: green setCellMine" />
-    <MESSAGE value="feat: green canCreateGrid" />
     <MESSAGE value="feat: green setMineInPosition" />
     <MESSAGE value="feat: green checkMinePosition" />
     <MESSAGE value="refactor: LogicsImpl" />
@@ -913,7 +899,9 @@
     <MESSAGE value="refactor: cellTest" />
     <MESSAGE value="feat: green canCreateFactory" />
     <MESSAGE value="feat: green testMineInUpLeftCorner" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: green testMineInUpLeftCorner" />
+    <MESSAGE value="refactor: grid" />
+    <MESSAGE value="refactor: logics" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: logics" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

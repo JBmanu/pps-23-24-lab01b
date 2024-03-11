@@ -16,7 +16,7 @@ public interface Grid {
 
     boolean isShowCell(final Position position);
 
-    boolean hasWin();
+    boolean hasWin(final Position position);
 
     Position generateEmptyCell();
 

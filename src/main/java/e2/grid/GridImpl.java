@@ -95,11 +95,13 @@ public class GridImpl implements Grid {
     }
 
     @Override
-    public boolean hasWin() {
+    public boolean hasWin(final Position position) {
+        this.showCell(position);
         final long remainingCellsOfMineCalculation = this.cells.stream()
                 .filter(cell -> !cell.isMine())
                 .filter(cell -> !cell.isShowCell())
                 .count();
+        System.out.println("CCCC " + remainingCellsOfMineCalculation);
         return remainingCellsOfMineCalculation == CONDITION_WINNER;
     }
 

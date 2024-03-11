@@ -37,7 +37,8 @@ public class GUI extends JFrame {
             } else {
                 drawBoard();
             }
-            boolean isThereVictory = this.logics.hasWin(); // call the logic here to ask if there is victory
+            boolean isThereVictory = this.logics.hasWin(position); // call the logic here to ask if there is victory
+            System.out.println("WIN");
             if (isThereVictory) {
                 quitGame();
                 JOptionPane.showMessageDialog(this, "You won!!");

@@ -76,7 +76,7 @@ public class GridTest {
                 this.grid.showCell(new SimplePosition(row, colum));
             }
         }
-        assertTrue(this.grid.hasWin());
+        assertTrue(this.grid.hasWin(FREE_POSITION));
     }
 
 
