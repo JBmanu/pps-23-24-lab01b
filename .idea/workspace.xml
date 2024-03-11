@@ -9,20 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="refactor: logics">
+    <list default="true" id="831f034a-1243-4f9d-a76a-b1d83df651c5" name="Changes" comment="test: game GUI">
       <change afterPath="$PROJECT_DIR$/src/main/java/e2/grid/factory/GridDifficultly.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/e2/grid/factory/GridDifficulty.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/e2/grid/factory/GridDifficultlyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/e2/Logics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/Logics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/LogicsImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e2/grid/GridImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/e2/grid/gridDifficulty/GridDifficulty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/LogicsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/GridTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2/grid/GridTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/gridDifficulty/EasyGridDifficultly.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/e2/grid/gridDifficulty/GridDifficultlyTest.java" beforeDir="false" />
     </list>
@@ -475,15 +469,7 @@
       <workItem from="1710168098764" duration="280000" />
       <workItem from="1710171743134" duration="126000" />
       <workItem from="1710171876104" duration="91000" />
-      <workItem from="1710172099610" duration="5066000" />
-    </task>
-    <task id="LOCAL-00159" summary="feat: green &#10;testUpdatePiecePositionOfId">
-      <option name="closed" value="true" />
-      <created>1709915087438</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1709915087438</updated>
+      <workItem from="1710172099610" duration="5518000" />
     </task>
     <task id="LOCAL-00160" summary="feat: green &#10;estUpdatePiecePositionOfIdInPositionOutGrid">
       <option name="closed" value="true" />
@@ -869,14 +855,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710177236548</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="test: game GUI">
+      <option name="closed" value="true" />
+      <created>1710177755094</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1710177755094</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: green setMineInPosition" />
     <MESSAGE value="feat: green checkMinePosition" />
     <MESSAGE value="refactor: LogicsImpl" />
     <MESSAGE value="feat: green loseGame" />
@@ -901,7 +894,8 @@
     <MESSAGE value="feat: green testMineInUpLeftCorner" />
     <MESSAGE value="refactor: grid" />
     <MESSAGE value="refactor: logics" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: logics" />
+    <MESSAGE value="test: game GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: game GUI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

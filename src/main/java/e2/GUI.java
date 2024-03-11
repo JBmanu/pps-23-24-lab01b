@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class GUI extends JFrame {
 
@@ -38,6 +39,7 @@ public class GUI extends JFrame {
                 drawBoard();
             }
             boolean isThereVictory = this.logics.hasWin(position); // call the logic here to ask if there is victory
+            this.repaint();
             System.out.println("WIN");
             if (isThereVictory) {
                 quitGame();
@@ -102,7 +104,7 @@ public class GUI extends JFrame {
             final Position buttonPosition = new SimplePosition(buttonPairPosition.getX(), buttonPairPosition.getY());
             final boolean isMine = this.logics.isMine(buttonPosition);
             final boolean isShowCell = this.logics.isShowCell(buttonPosition);
-            if (!isMine && isShowCell) {
+            if (!isMine && isShowCell && !Objects.equals(entry.getKey().getText(), "")) {
                 final JButton button = entry.getKey();
                 button.setText(this.logics.minesCountOf(buttonPosition) + "");
                 button.setEnabled(false);
