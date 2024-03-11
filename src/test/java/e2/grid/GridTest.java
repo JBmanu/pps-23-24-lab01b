@@ -2,6 +2,7 @@ package e2.grid;
 
 import e1.piece.position.Position;
 import e1.piece.position.SimplePosition;
+import e2.grid.factory.StaticFactoryGrid;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +10,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class GridTest {
     public static final int SIZE = 7;
-    public static final int MINE_COUNT = 1;
+    public static final int ONE_MINE = 1;
+    public static final int TWO_MINES = 2;
     public static final Position MINE_POSITION = new SimplePosition(2, 1);
     public static final Position FREE_POSITION = new SimplePosition(2, 2);
     public static final Position CORNER_UP_LEFT_POSITION = new SimplePosition(0, 0);
@@ -18,7 +20,7 @@ public class GridTest {
 
     @BeforeEach
     public void canCreateGrid() {
-        this.grid = new GridImpl(SIZE);
+        this.grid = StaticFactoryGrid.createOneMineInUpLeftCorner(SIZE);
     }
 
     @Test
@@ -38,16 +40,16 @@ public class GridTest {
     @Test
     public void minesCountFromPosition() {
         this.grid.setMineIn(MINE_POSITION);
-        final int minesCountFromPosition = this.grid.minesCountOf(FREE_POSITION);
-        assertEquals(MINE_COUNT, minesCountFromPosition);
+        final int minesCountFromPosition = this.grid.countMinesIn(FREE_POSITION);
+        assertEquals(ONE_MINE, minesCountFromPosition);
     }
 
     @Test
     public void minesCountInCornerUpLeftPosition() {
         final Position minePositionNearCornerUpLeft = new SimplePosition(0, 1);
         this.grid.setMineIn(minePositionNearCornerUpLeft);
-        final int minesCountFromPosition = this.grid.minesCountOf(CORNER_UP_LEFT_POSITION);
-        assertEquals(MINE_COUNT, minesCountFromPosition);
+        final int minesCountFromPosition = this.grid.countMinesIn(CORNER_UP_LEFT_POSITION);
+        assertEquals(TWO_MINES, minesCountFromPosition);
     }
 
     @Test
@@ -55,8 +57,8 @@ public class GridTest {
         final Position minePositionNearCornerDownRight
                 = new SimplePosition(CORNER_DOWN_RIGHT_POSITION.x() - 1,CORNER_DOWN_RIGHT_POSITION.y());
         this.grid.setMineIn(minePositionNearCornerDownRight);
-        final int minesCountFromPosition = this.grid.minesCountOf(CORNER_DOWN_RIGHT_POSITION);
-        assertEquals(MINE_COUNT, minesCountFromPosition);
+        final int minesCountFromPosition = this.grid.countMinesIn(CORNER_DOWN_RIGHT_POSITION);
+        assertEquals(ONE_MINE, minesCountFromPosition);
     }
 
     @Test

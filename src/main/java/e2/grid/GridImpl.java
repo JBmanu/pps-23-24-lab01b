@@ -6,7 +6,10 @@ import e2.grid.cell.Cell;
 import e2.grid.cell.FreeCell;
 import e2.grid.cell.MineCell;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.Random;
 import java.util.stream.IntStream;
 
 public class GridImpl implements Grid {
@@ -52,7 +55,7 @@ public class GridImpl implements Grid {
         return row >= MIN_BOUND && colum >= MIN_BOUND && row < this.size && colum < this.size;
     }
 
-    private int computeMinesCountOf(final Position position) {
+    private int computeCountMinesIn(final Position position) {
         final int y = position.y();
         final int x = position.x();
         final int startXCell = x - 1;
@@ -75,9 +78,8 @@ public class GridImpl implements Grid {
     }
 
     @Override
-    public int minesCountOf(final Position position) {
-//        return this.cellOf(position).minesAround();
-        return 0;
+    public int countMinesIn(final Position position) {
+        return this.computeCountMinesIn(position);
     }
 
     @Override
@@ -94,8 +96,9 @@ public class GridImpl implements Grid {
 
     @Override
     public boolean hasWin() {
-        final long remainingCellsOfMineCalculation = this.cells.stream().filter(cell -> !cell.isMine())
-                .filter(Cell::isShowCell)
+        final long remainingCellsOfMineCalculation = this.cells.stream()
+                .filter(cell -> !cell.isMine())
+                .filter(cell -> !cell.isShowCell())
                 .count();
         return remainingCellsOfMineCalculation == CONDITION_WINNER;
     }

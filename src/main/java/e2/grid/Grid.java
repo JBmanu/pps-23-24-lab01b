@@ -10,11 +10,11 @@ public interface Grid {
 
     boolean isMine(final Position position);
 
-    int minesCountOf(final Position position);
+    int countMinesIn(final Position position);
 
     void showCell(final Position position);
 
-    boolean isShowCell(Position position);
+    boolean isShowCell(final Position position);
 
     boolean hasWin();
 
