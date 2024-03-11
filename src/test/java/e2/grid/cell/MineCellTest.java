@@ -10,12 +10,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MineCellTest {
 
+    public static final Position POSITION = new SimplePosition(0, 0);
     private Cell mineCell;
 
     @BeforeEach
     public void canCreateMineCell() {
-        Position position = new SimplePosition(0, 0);
-        mineCell = new MineCell(position);
+        this.mineCell = new MineCell(POSITION);
     }
 
     @Test
@@ -28,5 +28,12 @@ public class MineCellTest {
         assertFalse(this.mineCell.isShowCell());
         this.mineCell.showCell();
         assertTrue(this.mineCell.isShowCell());
+    }
+
+    @Test
+    public void readPosition() {
+        final boolean equalsPosition = this.mineCell.position().equals(POSITION);
+        assertTrue(equalsPosition);
+        assertTrue(this.mineCell.equalsPosition(POSITION));
     }
 }
